@@ -1,0 +1,532 @@
+
+<html>
+<head>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+
+<h2>Sentiment Analysis <br> Naive Bayes classifier </h2>
+<div class="home-header">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+<form action="" method="post" class="form-wrapper cf col-lg-6 col-md-6 col-sm-6 col-xs-6" id="senttext">
+    <input type="text" name = "name" placeholder="Enter your text here " required>
+    <button type="submit" name="submit" id="submitbtn">Analysis</button>
+</form>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+</div>
+<?php
+    //be sure to validate and clean your variables
+    // $name = $_POST['name'];
+	$name = (isset($_POST['name']) ) ? $_POST['name'] : '';
+	$resultraw = exec('python naivebayes.py '.$name);
+	// echo '<h1>'.$resultraw.'</h1>';
+	$token_raw = substr($resultraw,strpos($resultraw, '[')+1,strpos($resultraw,']')-1);
+    $pos_start = strpos($resultraw,'[',strpos($resultraw, '[')+1);
+    $pos_end = strpos($resultraw,']',strpos($resultraw, ']')+1);
+    $pos_array = str_replace('  ',',',substr($resultraw,$pos_start,$pos_end));
+	$positive_result = (float)substr($resultraw,strpos($resultraw, ']')+1);
+        // echo '<h1>'.$pos_array.'</h1>';
+	// echo '<h1>'.$token_raw.'</h1>';
+	// echo '<h1>'.$positive_result.'</h1>';
+	
+	$tokenstr = explode(',', $token_raw);
+	foreach ($tokenstr as $token) {
+		$tokens[] = array('name'=>"$token");	
+	}
+	// echo '<h1>'.$tokenstr[0].'</h1>';
+	// echo json_encode($tokens);
+	// echo '<h2>'.($positive_result + 10).'</h2>'
+
+	// foreach($resultraw as $result){
+	// 	echo '<h1>'.$result.'</h1>';
+	// }
+	// $resultjson = json_decode($resultraw,true);
+	// echo '<h1>'.$resultjson['tokens'].'</h1>'
+
+?>
+<span class="headline"><?php echo $name; ?></span>
+<div id="body"></div>
+
+<div class="analysis">
+    <h2><?php echo $pos_array; ?></h2>
+</div>
+<div id="chart">
+	
+	   <h3><?php echo number_format($positive_result,2); ?><span>%</span>
+	   <br>Positive</h3>
+</div>
+
+
+<button type="button" class="output btn-success">O/P</button>
+  
+
+   
+  
+
+</body>
+</html>
+
+
+<style type="text/css">
+    
+ body{
+
+ 	background-color: #455263;
+ 	text-align: center;
+ 	background-image: url(bg-repeat.svg);
+    background-position: center;
+    background-size: 7px,cover,cover;
+ }
+.home-header{
+
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    text-align: center;
+}
+.headline{
+	color: white;
+	font-size: 25px;
+}
+
+.form-wrapper {
+        
+        padding: 15px;
+        /*margin-left: 100px;*/
+        background: #444;
+        background: rgba(0,0,0,.2);
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+    }
+    
+       .cf:before, .cf:after{
+      content:"";
+      display:table;
+    }
+    
+    .cf:after{
+      clear:both;
+    }
+
+    .cf{
+      zoom:1;
+    }
+    .output{
+        padding: 20px;
+        border-radius: 50px;
+        border:1px solid white;
+    }
+    .form-wrapper input {
+        width: 84%;
+        height: 40px;
+        padding: 10px 5px;
+        float: left;    
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        border: 0;
+        background: #eee;
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;      
+    }
+    
+    .form-wrapper input:focus {
+        outline: 0;
+        background: #fff;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+    
+    .form-wrapper input::-webkit-input-placeholder {
+       color: #999;
+       font-weight: normal;
+       font-style: italic;
+    }
+    
+    .form-wrapper input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .form-wrapper input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }    
+    
+    .form-wrapper button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 109px;
+        font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        color: #fff;
+        text-transform: uppercase;
+        background: #d83c3c;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+      
+    .form-wrapper button:hover{     
+        background: #e54040;
+    }   
+      
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: #c42f2f;    
+    }
+    
+    .form-wrapper button:before {
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #d83c3c transparent;
+        top: 12px;
+        left: -6px;
+    }
+    
+    .form-wrapper button:hover:before{
+        border-right-color: #e54040;
+    }
+    
+    .form-wrapper button:focus:before{
+        border-right-color: #c42f2f;
+    }    
+    
+    .form-wrapper button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+  .node {
+    cursor: pointer;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node text {
+    font: 14px sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+ h3{
+    position: absolute;
+    margin-top: 99px;
+    margin-left: 210px;
+    font-family: helvetica;
+    font-size: 25px;
+    color: #3399FF;
+}
+
+h2{
+font-family: helvetica;
+    font-size: 30px;
+    color: white;
+
+}
+
+#chart{
+
+	height: 330px;
+	width: 500px;
+	margin-left: 450px;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+// $('#submitDemo').on("click",function() {
+//   // your stuff
+// }); 
+// $(function(){
+//     $("#body").hide();
+//     $("#chart").hide();
+//     $("#submitbtn").on("click", function(){
+//         $("#body").show();
+//     	$("#chart").show();
+//     });
+// });
+$(function(e){
+	$(".analysis").hide();
+ 
+    // $("#senttext").submit(function(){
+    	   
+    //  //    $("#body").show();
+    // 	// $("#chart").show();
+    // });
+       $(".output").click(function(){
+        
+        $(".analysis").show();
+    });
+});
+var margin = {
+    top: 200,
+    right: 120,
+    bottom: 20,
+    left: 120
+},
+width = 960 - margin.right - margin.left,
+height = 800 - margin.top - margin.bottom;
+
+var root = {
+"name": "Features",
+"children": <?php echo json_encode($tokens); ?>
+}
+
+var i = 0,
+duration = 750,
+rectW = 65,
+rectH = 40;
+
+var tree = d3.layout.tree().nodeSize([70, 40]);
+var diagonal = d3.svg.diagonal()
+    .projection(function (d) {
+    return [d.x + rectW / 2, d.y + rectH / 2];
+});
+
+var svg = d3.select("#body").append("svg").attr("width", 1200).attr("height", 350)
+    .call(zm = d3.behavior.zoom().scaleExtent([1,3]).on("zoom", redraw)).append("g")
+    .attr("transform", "translate(" + 550 + "," + 50 + ")");
+
+//necessary so that zoom knows where to zoom and unzoom from
+zm.translate([450, 40]);
+
+root.x0 = 0;
+root.y0 = height / 2;
+
+function collapse(d) {
+    if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+    }
+}
+
+root.children.forEach(collapse);
+update(root);
+
+d3.select("#body").style("height", "290px");
+
+function update(source) {
+
+    // Compute the new tree layout.
+    var nodes = tree.nodes(root).reverse(),
+        links = tree.links(nodes);
+
+    // Normalize for fixed-depth.
+    nodes.forEach(function (d) {
+        d.y = d.depth * 180;
+    });
+
+    // Update the nodes…
+    var node = svg.selectAll("g.node")
+        .data(nodes, function (d) {
+        return d.id || (d.id = ++i);
+    });
+
+    // Enter any new nodes at the parent's previous position.
+    var nodeEnter = node.enter().append("g")
+        .attr("class", "node")
+        .attr("transform", function (d) {
+        return "translate(" + source.x0 + "," + source.y0 + ")";
+    })
+        .on("click", click);
+
+    nodeEnter.append("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1)
+        .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+    });
+
+    nodeEnter.append("text")
+        .attr("x", rectW / 2)
+        .attr("y", rectH / 2)
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .text(function (d) {
+        return d.name;
+    });
+
+    // Transition nodes to their new position.
+    var nodeUpdate = node.transition()
+        .duration(duration)
+        .attr("transform", function (d) {
+        return "translate(" + d.x + "," + d.y + ")";
+    });
+
+    nodeUpdate.select("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1)
+        .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+    });
+
+    nodeUpdate.select("text")
+        .style("fill-opacity", 1);
+
+    // Transition exiting nodes to the parent's new position.
+    var nodeExit = node.exit().transition()
+        .duration(duration)
+        .attr("transform", function (d) {
+        return "translate(" + source.x + "," + source.y + ")";
+    })
+        .remove();
+
+    nodeExit.select("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+    //.attr("width", bbox.getBBox().width)""
+    //.attr("height", bbox.getBBox().height)
+    .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    nodeExit.select("text");
+
+    // Update the links…
+    var link = svg.selectAll("path.link")
+        .data(links, function (d) {
+        return d.target.id;
+    });
+
+    // Enter any new links at the parent's previous position.
+    link.enter().insert("path", "g")
+        .attr("class", "link")
+        .attr("x", rectW / 2)
+        .attr("y", rectH / 2)
+        .attr("d", function (d) {
+        var o = {
+            x: source.x0,
+            y: source.y0
+        };
+        return diagonal({
+            source: o,
+            target: o
+        });
+    });
+
+    // Transition links to their new position.
+    link.transition()
+        .duration(duration)
+        .attr("d", diagonal);
+
+    // Transition exiting nodes to the parent's new position.
+    link.exit().transition()
+        .duration(duration)
+        .attr("d", function (d) {
+        var o = {
+            x: source.x,
+            y: source.y
+        };
+        return diagonal({
+            source: o,
+            target: o
+        });
+    })
+        .remove();
+
+    // Stash the old positions for transition.
+    nodes.forEach(function (d) {
+        d.x0 = d.x;
+        d.y0 = d.y;
+    });
+}
+
+// Toggle children on click.
+function click(d) {
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+    } else {
+        d.children = d._children;
+        d._children = null;
+    }
+    update(d);
+}
+
+//Redraw for zoom
+function redraw() {
+  //console.log("here", d3.event.translate, d3.event.scale);
+  svg.attr("transform",
+      "translate(" + d3.event.translate + ")"
+      + " scale(" + d3.event.scale + ")");
+}
+
+
+
+var data = [ {name: "Positive", value: <?php echo $positive_result; ?>},
+			        {name: "Negative", value: <?php echo (100-$positive_result); ?>}
+           ];
+
+var margin = {top: 20, right: 20, bottom: 20, left: 20};
+	width = 300 - margin.left - margin.right;
+	height = width - margin.top - margin.bottom;
+
+var chart = d3.select("#chart")
+				.append('svg')
+			    .attr("width", width + margin.left + margin.right)
+			    .attr("height", height + margin.top + margin.bottom)
+			   .append("g")
+    			.attr("transform", "translate(" + ((width/2)+margin.left) + "," + ((height/2)+margin.top) + ")");
+
+
+var radius = Math.min(width, height) / 2;
+
+var color = d3.scale.ordinal()
+	.range(["#589C58", "#D26262"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius)
+    .innerRadius(radius - 40);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .startAngle(1.1*Math.PI)
+    .endAngle(3.1*Math.PI)
+    .value(function(d) { return d.value; });
+
+
+var g = chart.selectAll(".arc")
+  .data(pie(data))
+.enter().append("g")
+  .attr("class", "arc");
+
+g.append("path")
+  .style("fill", function(d) { return color(d.data.name); })
+  .transition().delay(function(d, i) { return i * 500; }).duration(800)
+  .attrTween('d', function(d) {
+       var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+       return function(t) {
+           d.endAngle = i(t);
+         return arc(d);
+       }
+  });
+
+
+
+</script>

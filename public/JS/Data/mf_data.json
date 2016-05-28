@@ -1,0 +1,419 @@
+[
+{
+"name":"IDBI Mutual Fund Asset Management",
+"scheme":
+[
+	{
+	 "name":"IDBI equity advantage fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"1",
+	"experience":10,
+	"inception":7,
+	"riskindex":3
+	},
+
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":16.69,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"liquid",
+	"type":"Open Ended",
+	"rating":"2",
+	"experience":7,
+	"inception":17,
+	"riskindex":2
+	},
+
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"3",
+	"experience":14,
+	"inception":11,
+	"riskindex":4
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"balance",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":12,
+	"inception":9,
+	"riskindex":5
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"debt",
+	"type":"Open Ended",
+	"rating":"5",
+	"experience":23,
+	"inception":3,
+	"riskindex":1
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"liquid",
+	"type":"Open Ended",
+	"rating":"2",
+	"experience":16,
+	"inception":13,
+	"riskindex":3
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"debt",
+	"type":"Open Ended",
+	"rating":"3",
+	"experience":9,
+	"inception":10,
+	"riskindex":4
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"balance",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":16,
+	"inception":4,
+	"riskindex":5
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"3",
+	"experience":19,
+	"inception":8,
+	"riskindex":1
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"liquid",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":10,
+	"inception":15,
+	"riskindex":2
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"5",
+	"experience":17,
+	"inception":19,
+	"riskindex":4
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":21,
+	"inception":18,
+	"riskindex":5
+	},
+	{
+	 "name":"IDBI India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"liquid",
+	"type":"Open Ended",
+	"rating":"5",
+	"experience":24,
+	"inception":22,
+	"riskindex":1
+	}
+	]
+},
+{
+"name":"AXIS Mutual Fund Asset Management",
+"scheme":
+[
+	{
+	 "name":"AXIS equity advantage fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"debt",
+	"type":"Close Ended",
+	"rating":"1",
+	"experience":13,
+	"inception":7,
+	"riskindex":2
+	},
+
+	{
+	 "name":"AXIS India Top 100 equity fund",
+	"nav":16.69,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"2",
+	"experience":11,
+	"inception":14,
+	"riskindex":3
+	},
+
+	{
+	 "name":"AXIS India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"balance",
+	"type":"Open Ended",
+	"rating":"3",
+	"experience":3,
+	"inception":4,
+	"riskindex":4
+	},
+	{
+	"name":"AXIS India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":17,
+	"inception":19,
+	"riskindex":5
+	},
+	{
+	 "name":"AXIS India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Open Ended",
+	"rating":"5",
+	"experience":19,
+	"inception":23,
+	"riskindex":1
+	},{
+	 "name":"AXIS India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"debt",
+	"type":"Open Ended",
+	"rating":"4",
+	"experience":14,
+	"inception":16,
+	"riskindex":2
+	},
+	{
+	 "name":"AXIS India Top 100 equity fund",
+	"nav":17.912,
+	"minimum_investment":500,
+	"maximum_investment":500,
+	"exit_load":1,
+	"exit_load_cond":"before 1 year",
+	"return":{
+		  "ytd":12,
+		  "1month":7,
+		  "3month":14,
+		 "6month":12
+		 },
+	"category":"Equity",
+	"type":"Close Ended",
+	"rating":"2",
+	"experience":7,
+	"inception":11,
+	"riskindex":4
+	}
+	]
+}
+]
+

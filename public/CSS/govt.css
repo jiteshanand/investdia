@@ -1,0 +1,243 @@
+.goi_scheme_wrapper{
+    background-color: #f5f5f5;
+}
+.goi_scheme_details{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goi_scheme_head {
+    clear: both;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.goi_scheme_description{
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: arvo;
+}
+
+.scheme_category{
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.saving_scheme_heading{
+    font-size: 25px;
+    padding: 0px 10px 5px 5px;
+}
+.insurance_scheme_heading{
+        font-size: 25px;
+    padding: 0px 10px 5px 5px;
+    margin-top: 10px;
+}
+.scheme_list_wrapper{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.scheme_list{
+    margin: 0 auto;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.scheme_heading{
+    text-align: center;
+    display: flex;
+    padding: 0px;
+    background-color: #DADADA;
+    font-size: 16px;
+    font-family: bitter;
+    color: #5B5B5B;
+    border: 2px groove #f5f5f5;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.scheme_heading li{
+    padding: 10px;
+    border-right: 2px groove;
+    width: auto;
+}
+
+.govt_scheme_detail {
+    border: 1px solid #9d9d9d;
+    border-bottom: 0px;
+}
+
+.detail_line1{
+    display: flex;
+    width: 100%;
+    background-color: #E9E9E9;
+}
+
+.govt_scheme_detail:nth-child(even) .detail_line1{
+        background-color: white;
+}
+
+.name_wrapper{
+    width: 30%;
+    border-right: 1px solid #ccc;
+}
+
+.govt_scheme_name{
+    padding: 10px;
+    font-size: 16px;
+    font-family: bitter;
+    margin: auto;
+}
+
+.govt_scheme_rate{
+    width: 25%;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    color: #555;
+    font-family: serif;
+    border-right: 1px solid #ccc;
+}
+
+.govt_scheme_min_max{
+    width: 30%;
+    padding: 7px;
+    display: block;
+    border-right: 1px solid #ccc;
+}
+
+.govt_scheme_ceasing_age,.govt_scheme_entry_age{
+    width: 14%;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    font-family: serif;
+    border-right: 1px solid #ccc;
+}
+
+.govt_scheme_premium,.govt_scheme_sum_assured{
+    width: 11%;
+    padding: 5px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    font-size: 13px;
+}
+.govt_scheme_death_benefit{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+.death_type{
+    display: flex;
+        padding: 5px;
+}
+.death_data{
+    margin-left: auto;
+    font-size: 13px;
+}
+.death_label{
+    font-size: 13px;
+    width: 60%;
+    text-align: left;
+        font-weight: bold;
+}
+
+.min_inv,.max_inv{
+display: flex;
+padding: 7px;
+}
+
+.max_inv_label,.min_inv_label{
+    min-width: 55%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5F5A5A;
+    text-align: left;
+}
+.max_inv_data,.min_inv_data{
+     font-size: 12px;
+    font-family: sans-serif;
+    text-align: left;
+}
+.govt_scheme_maturity{
+    width: 15%;    
+    margin: auto;
+    text-align: center;
+}
+
+.detail_line2{
+    display: inline-block;
+    width: 100%;
+}
+
+.scheme_feature{
+    min-width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+        min-height: 70px;
+}
+
+.scheme_feature .fa-check-square-o{
+    font-size: 20px;
+    color: green;
+    margin-top: 5px;
+}
+
+.scheme_feature .fa-times{
+    font-size: 20px;
+    color: red;
+    margin-top: 5px;
+}
+
+.feature_label{
+    font-size: 14px;
+    color: #555;
+    font-family: arvo;
+}
+
+.Notapplicable_label{
+    font-size: 13px;
+    color: #087993;
+}
+
+.line3{
+    padding: 10px;
+}
+
+.elig_head,.note_head{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2498C2;
+}
+
+.elig_item,.note_item{
+    font-size: 14px;
+    font-family: arvo;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+.view_detail{
+    padding: 10px;
+}
+
+.view_detail i{
+    font-size: 17px;
+    color: #6E100D;
+}
+
+.scheme_intro{
+    padding: 20px 0px 0px 20px;
+    font-size: 14px;
+    font-family: bitter;
+}

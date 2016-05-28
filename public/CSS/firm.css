@@ -1,0 +1,399 @@
+.intro-image-firm{
+    min-height: 45vh;
+    background-image: url(../images/bg-repeat.svg),linear-gradient(rgba(33, 103, 136, 0.85),rgba(38, 117, 154, 0.65)),url(../images/3.jpg);
+    background:url(../images/bg-repeat.svg),linear-gradient(140deg,rgb(10, 36, 62),rgba(27,30,39,.65)),url(../images/3.jpg) repeat;
+    background-position: center;
+    background-size: 3px,cover,cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.banner-firm h1{
+      margin: 0 0 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.banner-firm p{
+      color: #d7eff3;
+    margin: 0 auto 15px;
+    max-width: 550px;
+    width: 85%;
+    font-size: 12px;
+}
+
+.banner-firm form{
+  left: 25%;
+}
+.banner-firm{
+
+      left: 50%;
+    line-height: 1.1667;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+        top: 42%;
+        text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.broker-firm-list{
+    padding:0px;
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+   .banner-firm h1{
+  font-size: 17px;
+}
+
+.banner-firm p{
+  font-size: 11px;
+}
+}
+@media screen and (min-width: 200px) and (max-width: 450px) {
+.banner-firm h1{
+  font-size: 16px;
+}
+.banner-firm p{
+  display: none;
+}
+
+}
+.firm-heading{
+    text-align: center;
+    display: flex;
+    padding: 0px;
+   background-color: #ECECEC;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: bitter;
+    border: 2px groove #f5f5f5;
+}
+.compare{
+    display: block;
+    font-size: 16px;
+    font-family: bitter;
+    color: #BB2E2B;
+    margin-top: 20px;
+    text-align: center;
+}
+.firm-heading li{
+        padding: 10px;
+    border-right: 2px groove;
+}
+
+
+.firm-detail-container{
+    display: flex;
+}
+.firm-filter{
+width: 18%;
+    /* margin-left: 3%; */
+    box-shadow: 0px 0px 10px 4px #9d9d9d;
+    border-radius: 5px;
+    background-color: rgba(220, 221, 221, 0.8);
+}
+.filter-heading{
+    font-size: 25px;
+    font-family: arvo;
+    color: gray;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+.filter-form{
+        padding: 10px;
+}
+.investment-type-heading{
+        font-size: 19px;
+    color: #777;
+    font-family: bitter;
+}
+
+.filter-investment-type{
+    padding: 10px;
+}
+
+.filter-investment-type label{
+    font-size: 14px;
+    color: #577381;
+    letter-spacing: 1px;
+    font-family: bitter;
+    display: inline-flex;
+        margin-top: 5px;
+}
+input[type="checkbox"]{
+  width: 20px; /*Desired width*/
+  height: 20px;
+  margin: 0px !important;
+}
+
+
+.check-label{
+        margin-left: 15px;
+    /*margin-top: 4px;*/
+}
+
+.firm-fact{
+    /*padding: 40px;*/
+    display: flex;
+    background-color: #ddd;
+}
+.firm-display{
+    min-height: 55vh;
+    width: 70%;
+    margin-left: 0.5%;
+    background-color: rgba(235, 235, 235, 0.6);
+}
+
+.broker_firm_detail{
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex !important;
+    border: 2px groove rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+}
+
+.firm-stat1{
+    
+    padding-top: 20px;
+    flex-direction: column;
+}
+.firm-info{
+    margin-top: 15px;
+    width: 25%;
+    text-align: center;
+}
+
+.firm-name{
+    font-size: 1.3vw;
+    padding: 10px 10px 0px 0px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: oswald;
+    color: #218E8A;
+}
+
+.firm-url{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.firm-location{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #838385;
+    margin-top: 5px;
+}
+
+.firm-img{
+    width: 15vw;
+    height: 5vw;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.start_here .get-start{
+        width: 120px;
+    margin-top: 15px;
+}
+
+.start_here .btn{
+    padding: 6px 3px;
+    font-size: 11px;
+}
+
+.rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+ul.rating {
+    display: inline-block;
+}
+.rating li {
+list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2vw;
+}
+.rating .filled {
+    color: orangered;
+}
+.clear{
+  margin-top:10px;
+}
+
+.firm-social-btn {
+display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    line-height: 30px;
+    font-family: Entypo;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background: #84A9CB;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.firm-commission{
+    display: block;
+    padding: 0px 5px;
+}
+
+.account_opening{
+    display: flex;
+    padding: 0px 5px;
+    /*border-bottom: 1px groove rgb(245, 245, 245);*/
+}
+
+.account_opening_label{
+    
+    line-height: 35px;
+    font-family: bitter;
+        font-size: 13px;
+}
+.brokerage_fee_label{
+    line-height: 20px;
+    font-family: bitter;
+    font-size: 13px;
+}
+.account_opening_value{
+    font-weight: bold;
+    margin-left: auto;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+.firm-rate1{
+    width: 28%;
+
+}
+.firm-rate2{
+    width: 32%;
+}
+
+.brokerage-charges{
+    padding: 4px;
+}
+
+.firm-type {
+    font-size: 20px;
+    color: #286090;
+}
+
+.start_here{
+width: 15%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.brokerage_plan{
+        text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px;
+    color: #286090;
+}
+.brokerage_fee{
+    display: flex;
+    padding: 5px;
+    /*border-bottom: 1px groove rgb(245, 245, 245);*/
+}
+
+.brokerage_fee_value{
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.broker_type {
+    padding: 2px;
+    margin: 5px 0px 5px 10px;
+    background-color: beige;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.brokerage_fee_label{
+    width: 50%;
+}
+
+.brokerage_type{
+    display: block;
+}
+
+.firm-exchange{
+    font-size: 14px;
+    color: #a94442;
+    font-family: bitter;
+}
+
+
+.equity_type,.currency_type,.commodity_type{
+        display: block;
+    border: 1px groove #f5f5f5;
+    margin-bottom: 7px;
+    box-shadow: 0px 3px 2px 1px #ccc;
+}
+.charges_label,.amc_label{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px;
+    color: #286090;
+    line-height: 27px;
+}
+.opening_charges,.amc_charges{
+
+          display: block;
+    border: 1px groove #f5f5f5;
+    margin-bottom: 7px;
+    box-shadow: 0px 3px 2px 1px #ccc; 
+}
+
+.newaccount{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.newinput{
+    width: 275px;
+    padding: 6px;
+    margin: 7px;
+    border-radius: 6px;
+    border: 2px ridge;
+    border-color: #DCF3FE;
+}
+
+
+#newaccount_comment{  
+ width: 500px;
+    padding: 6px;
+    margin: 7px;
+    border-radius: 6px;
+    border: 2px ridge;
+    border-color: #DCF3FE;
+
+}
+
+.modal-title{
+    font-family: oswald;
+}

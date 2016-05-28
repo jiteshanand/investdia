@@ -1,0 +1,82 @@
+[
+{
+"commentid":"c00001",
+"postid":"p00001",
+"userid":"u00002",
+"value":"This is the right time to invest in market esp. IT Sector,so go ahead and invest in Infosys.",
+"timestamp":"12:04:18",
+"like":40
+},
+{
+"commentid":"c00002",
+"postid":"p00001",
+"userid":"u00001",
+"value":"Thanks for the suggestion.",
+"timestamp":"14:04:18",
+"like":2
+},
+{
+"commentid":"c00003",
+"postid":"p00002",
+"userid":"u00002",
+"value":"Auto sector is performing good.You can invest in either Bajaj Auto or Tata motors",
+"timestamp":"12:04:18",
+"like":40
+},
+{
+"commentid":"c00004",
+"postid":"p00002",
+"userid":"u00001",
+"value":"You can also buy SML isuzu.That stock has performed very well in last 1-2 months.",
+"timestamp":"14:04:18",
+"like":10
+},
+{
+"commentid":"c00005",
+"postid":"p00003",
+"userid":"u00002",
+"value":"P/E ratio is one of the most important indicator to decide whether to buy that stock or now.",
+"timestamp":"12:04:18",
+"like":40
+},
+
+{
+"commentid":"c00006",
+"postid":"p00004",
+"userid":"u00001",
+"value":"FDI in retail sector will generate lot of jobs and with the entry of big retail players there will be direct benefit to consumers and farmers.",
+"timestamp":"14:04:18",
+"like":10
+},
+{
+"commentid":"c00007",
+"postid":"p00004",
+"userid":"u00002",
+"value":"And we will get lot of discounts too :)",
+"timestamp":"12:04:18",
+"like":40
+},
+{
+"commentid":"c00008",
+"postid":"p00005",
+"userid":"u00001",
+"value":"In my opinion IT is the most important and attractive sector right now.You can easily get 20% return in next year",
+"timestamp":"14:04:18",
+"like":10
+},{
+"commentid":"c00009",
+"postid":"p00005",
+"userid":"u00002",
+"value":"Banking sector is also performing well.SBI,ICICI and YES banks are top bet",
+"timestamp":"12:04:18",
+"like":40
+},
+{
+"commentid":"c00010",
+"postid":"p00005",
+"userid":"u00001",
+"value":"Thanks for the suggestion.",
+"timestamp":"14:04:18",
+"like":10
+}
+]

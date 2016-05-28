@@ -1,0 +1,47 @@
+ <div class="container" id="main" ng-init="getStockData($root.tickersymbol)">  
+
+ <div class="stockdetail-content row" ng-repeat="stock in niftystocks | filter:{t:tickersymbol}:true">
+  <div class="stock-header">
+  <!-- <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div> -->
+    <div class="stock-title col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div class="title-logo"><img src="../images/logo/{{stock.t}}.jpg" width="85px" height="85px"></div>
+    <div class="title-info">
+      <span class="title-symbol">{{stock.t}}</span>
+      <span class="title-name">{{stock.name}}</span>
+      <br>
+      <span class="title-description"></span>
+    </div>
+    </div>
+  <div class="stock-value col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div class="curr-price col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <span class="head-title ">Price</span>
+      <span class="head-value">{{stock.l}}</span>
+    </div>
+    <div class="curr-change col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <span class="head-title">Quote</span>
+      <span class="curr-c">{{stock.c}}</span>
+    </div>
+    <div class="curr-change-p col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <span class="head-title"></span>
+      <span class="curr-cp">({{stock.cp}})%</span>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="loading">Loading&#8230;</div>
+
+  <div id="container" config="stockgraph" style="height: 400px; min-width: 310px">
+  </div>
+
+  
+  <table id="table" class="table table-bordered table-hover">
+    <tr>
+      <th><center><h5>Headlines from <span id="date">today.</span></h5></center></th>
+    </tr>
+  </table>
+  
+  <div class="text-center" id="wat"></div>
+ 
+</div>
+

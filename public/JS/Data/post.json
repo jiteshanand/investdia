@@ -1,0 +1,37 @@
+[
+{
+"postid":"p00001",
+"userid":"u00001",
+"value":"I want to Invest in Infosys?Please advice",
+"timestamp":"12:04:18",
+"like":40
+},
+{
+"postid":"p00002",
+"userid":"u00002",
+"value":"I want to Invest in Auto Sector.Which stock I should invest in ?",
+"timestamp":"14:04:18",
+"like":20
+},
+{
+"postid":"p00003",
+"userid":"u00003",
+"value":"Can you please explain the significance of p/E, I am new to the stock market.....Thanks!!",
+"timestamp":"14:04:18",
+"like":10
+},
+{
+"postid":"p00004",
+"userid":"u00002",
+"value":"FDI in retail sector will revolutionize the Indian market.What other thinks about this?",
+"timestamp":"14:04:18",
+"like":30
+},
+{
+"postid":"p00005",
+"userid":"u00003",
+"value":"Which is the most attractive sector currently to invest?",
+"timestamp":"14:04:18",
+"like":20
+}
+]

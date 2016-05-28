@@ -1,0 +1,295 @@
+<header class="global-header">
+ 
+<nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+  
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+           <div class="logo-wrapper">
+     <a href="www.investdia.com">Investdia</a>
+  </div>
+    </div>
+
+ <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+    <ul class="top-menu navbar-nav nav">
+    <li class="menu-item"><a href="/home" class="home-link">HOME</a></li>
+    <li class="menu-item"><a href="#services" class="service-link">LOGIN</a></li>
+    <li class="menu-item"><a href="/blog" target="_blank" class="blog-link">BLOG</a></li>
+    <li class="menu-item"><a href="#about" class="about-link">ABOUT</a></li>
+    <li class="menu-item"><a href="#contact" class="contact-link">CONTACT US</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+</header>
+
+<div id="main" class="site-content">
+<main id="content" role="main" itemprop="mainContentOfPage">
+<div class="goi_scheme_wrapper">
+<div class="goi_scheme_details">
+<div class="goi_scheme_head">Government of India investment schemes</div>
+<div class="goi_scheme_description">
+  Government of India has initiated many investment schemes to reinforce economic development and the financial stability of its citizens. These schemes were introduced in order to provide financial support in the form of bank accounts, financial security for education, loans, and for emergencies like death.<br>
+  <br>
+  All these schemes can be broadly classified into three categories.
+
+  <div class="scheme_category">
+    <div>Saving Schemes</div>
+    <div>Insurance Schemes</div>
+    <div>Pension Schemes</div>
+  </div>
+
+  Check out the list prepared by <b>Investdia</b> to help you in deciding the best investment option.
+
+</div>
+<section class="scheme_list_wrapper">
+<div class="saving_scheme_heading">Saving Schemes</div>
+ <div class="scheme_list">
+      <ul class="scheme_heading">
+      <li style="width:30%">Investdia rating 
+      <a ng-click="sort_by('broker_name')"><i class="fa fa-chevron-down"></i></a>
+      <!-- <a ng-click="setOrder('-title')"> <i class="fa fa-chevron-up"></i></a> -->
+      </li>
+      <li style="width:25%">Interest Rate</li>
+      <li style="width:30%">Min/Max Investment</li>
+      <li style="width:15%">Maturity Period</li>
+      </ul>
+
+      <div class="govt_scheme_detail" ng-repeat="item in saving">
+      <div class="detail_line1">
+        <div class="name_wrapper">
+          <div class="govt_scheme_name">{{item.scheme_name}}</div>
+          <div class="view_detail">
+          <i class="fa fa-chevron-circle-down" ng-click="up=true" ng-hide="up" aria-hidden="true"> View Details</i>
+          <i class="fa fa-chevron-circle-up" ng-click="up=false" ng-hide="!up" aria-hidden="true"> View Details</i> 
+        </div>
+</div>
+        <div class="govt_scheme_rate">
+        <div ng-repeat="interest in item.interest_rate">
+        <div class="rate_percent">{{interest.rate}}{{interest.rate_label}}</div>
+        </div>
+        </div>
+        <div class="govt_scheme_min_max">
+        <div class="min_inv">
+        <div class="min_inv_label">Minimum Investment</div>
+        <div class="min_inv_data">{{item.min_investment}}</div>
+        </div>
+        <div class="max_inv">
+        <div class="max_inv_label">Maximum Investment</div>
+        <div class="max_inv_data">{{item.max_investment}}</div>
+        </div>
+        </div>
+        <div class="govt_scheme_maturity">{{item.maturity_period}}</div>
+      </div>
+
+      <div class="hidden_block" ng-show="up">
+      <div class="detail_line2">
+      <div class="scheme_feature">
+        <div class="feature_label">
+          Nomination allowed
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.nomination == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i><i ng-if="item.nomination == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.nomination=='NA'">Not Applicable</div>
+        </div>
+        </div>
+              <div class="scheme_feature">
+        <div class="feature_label">
+          Joint Account
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.joint == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i><i ng-if="item.joint == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.joint=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+      <div class="scheme_feature">
+        <div class="feature_label">
+          Premature closure
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.premature_closure == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i>
+          <i ng-if="item.premature_closure == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.premature_closure=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+            <div class="scheme_feature">
+        <div class="feature_label">
+          Eligible for 80C tax rebate
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.deposit_tax_free == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i><i ng-if="item.deposit_tax_free == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.deposit_tax_free=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+            <div class="scheme_feature">
+        <div class="feature_label">
+          Interest earned tax-exempt
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.interest_tax_free == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i><i ng-if="item.interest_tax_free == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.interest_tax_free=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+
+      <div class="scheme_feature">
+        <div class="feature_label">
+          Online Platform
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.online == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i>
+          <i ng-if="item.online == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.online=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+            <div class="scheme_feature">
+        <div class="feature_label">
+          Can minors apply?
+        </div>
+        <div class="feature_value">
+          <i ng-if="item.account_minor == 'Yes'" class="fa fa-check-square-o" aria-hidden="true"></i><i ng-if="item.account_minor == 'No'" class="fa fa-times" aria-hidden="true"></i>
+          <div class="Notapplicable_label" ng-if="item.account_minor=='NA'">Not Applicable</div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="line3">
+        <div class="eligibility_wrapper">
+          <div class="elig_head">
+            Eligibility Criteria
+          </div>
+          <ol ng-repeat="elig in item.eligibility">
+            <li class="elig_item">
+              {{elig.elig}}
+            </li>
+          </ol>
+        </div>
+        <div class="notes_wrapper">
+          <div class="note_head">
+            Important Points
+          </div>
+          <ol ng-repeat="note in item.others">
+            <li class="note_item">
+              {{note.note}}
+            </li>
+          </ol>
+        </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+
+      
+
+
+      <div class="insurance_scheme_heading">Insurance Schemes</div>
+<div class="scheme_list">
+      <ul class="scheme_heading">
+      <li style="width:30%">Investdia rating 
+      <a ng-click="sort_by('broker_name')"><i class="fa fa-chevron-down"></i></a>
+      </li>
+      <li style="width:14%">Entry Age</li>
+      <li style="width:14%">Cover ceasing age</li>
+      <li style="width:11%">Premium</li>
+      <li style="width:11%">Sum Assured</li>
+      <li style="width:20%">Death Benefit</li>
+      </ul>
+
+      <div class="govt_scheme_detail" ng-repeat="item in insurance">
+      <div class="detail_line1">
+        <div class="name_wrapper">
+          <div class="govt_scheme_name">{{item.scheme_name}}</div>
+          <div class="view_detail">
+          <i class="fa fa-chevron-circle-down" ng-click="up=true" ng-hide="up" aria-hidden="true"> View Details</i>
+          <i class="fa fa-chevron-circle-up" ng-click="up=false" ng-hide="!up" aria-hidden="true"> View Details</i> 
+        </div>
+</div>
+        <div class="govt_scheme_entry_age">{{item.entry_age}}</div>
+        <div class="govt_scheme_ceasing_age">{{item.cover_ceasing}}</div>
+        <div class="govt_scheme_premium">{{item.premium}}</div>
+        <div class="govt_scheme_sum_assured">{{item.sum_assured}}</div>
+        <div class="govt_scheme_death_benefit">
+        <div class="death_type" ng-repeat="type in item.death_benefit">
+        <div class="death_label">{{type.benefit_label}}</div>
+        <div class="death_data">{{type.benefit}}</div>
+        </div>
+     </div>
+      
+      </div>
+
+      <div class="hidden_block" ng-show="up">
+      <div class="scheme_intro">
+      <p>{{item.intro}}</p>
+      </div>
+      <div class="detail_line2">
+
+          <div class="scheme_feature">
+            <div class="feature_label">
+              Maturity Benefit
+            </div>
+            <div class="feature_value">{{item.maturity_benefit}}</div>
+            </div>
+            
+
+          <div class="scheme_feature">
+            <div class="feature_label">
+              Risk Period
+            </div>
+            <div class="feature_value">{{item.risk_period}}</div>
+            </div>
+        </div>
+
+
+      <div class="line3">
+        <div class="eligibility_wrapper">
+          <div class="elig_head">
+            Eligibility Criteria
+          </div>
+          <ol ng-repeat="elig in item.eligibility">
+            <li class="elig_item">
+              {{elig.elig}}
+            </li>
+          </ol>
+        </div>
+        <div class="notes_wrapper">
+          <div class="note_head">
+            Important Points
+          </div>
+          <ol ng-repeat="note in item.others">
+            <li class="note_item">
+              {{note.note}}
+            </li>
+          </ol>
+        </div>
+
+      </div>
+      </div>
+
+
+      </div>
+      </div>
+
+
+
+ </div>
+</section>
+
+
+</div>
+</div>
+</main>
+
+</div>

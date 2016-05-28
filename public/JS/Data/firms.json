@@ -1,0 +1,1075 @@
+[
+  {
+"broker_number":"1",
+"broker_name":"ZERODHA",
+"broker_type":"Discount Broker",
+"logo":"zerodha",
+"broker_supported_exchange":"NSE,BSE,MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"No",
+"commodity":"Yes",
+"ipo":"No",
+"etf's":"No"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"No",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"No"
+},
+"broker_fee":
+{
+"trading_account_opening":"200",
+"trading_demat_account_opening":"300",
+"commodity_account_opening":"200",
+"trading_account_amc":"NIL",
+"demat_account_amc":"300"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"Zero Brokerage",
+"Equity Intraday":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Options":"0.01% or Rs. 20/Trade whichever is lower",
+"Currency Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Currency Options":"0.01% or Rs. 20/Trade whichever is lower",
+"Commodity":"0.01% or Rs. 20/Trade whichever is lower",
+"minimum_brokerage":"NIL"
+}
+
+},
+{
+"broker_number":"2",
+"broker_name":"ICICI Direct",
+"broker_type":"Full Service Broker",
+"logo":"icicidirect",
+"broker_supported_exchange":"NSE,BSE,MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's'":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"750",
+"trading_demat_account_opening":"750",
+"commodity_account_opening":"200",
+"trading_account_amc":"NIL",
+"demat_account_amc":"350"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"",
+"Equity Intraday":"",
+"Equity Futures":"",
+"Equity Options":"",
+"Currency Futures":"",
+"Currency Options":"",
+"Commodity":"",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"3",
+"broker_name":"Aditya birla money limited",
+"broker_type":"Full Service Broker",
+"logo":"adityabirla",
+"broker_supported_exchange":"NSE,BSE,MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"No",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"No",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"-",
+"trading_demat_account_opening":"750",
+"commodity_account_opening":"NA",
+"trading_account_amc":"NIL",
+"demat_account_amc":"350"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"",
+"Equity Intraday":"",
+"Equity Futures":"",
+"Equity Options":"",
+"Currency Futures":"",
+"Currency Options":"",
+"Commodity":"",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"4",
+"broker_name":"RKSV securities",
+"broker_type":"Discount Broker",
+"logo":"rksv",
+"broker_supported_exchange":"NSE,BSE,MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"No",
+"bonds":"No",
+"commodity":"Yes",
+"ipo":"No",
+"etf's":"No"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"Yes",
+"automated trading":"No",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"No"
+},
+"broker_fee":
+{
+"trading_account_opening":"250",
+"trading_demat_account_opening":"250",
+"commodity_account_opening":"200",
+"trading_account_amc":"NIL",
+"demat_account_amc":"300"
+},
+"brokerage":
+{
+"plan":"Basic Plan",
+"Equity Delivery":"Zero Brokerage",
+"Equity Intraday":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Options":"0.01% or Rs. 20/Trade whichever is lower",
+"Currency Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Currency Options":"0.01% or Rs. 20/Trade whichever is lower",
+"Commodity":"0.01% or Rs. 20/Trade whichever is lower",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"5",
+"broker_name":"Tradejini",
+"broker_type":"Discount Broker",
+"logo":"tradejini",
+"broker_supported_exchange":"BSE, NSE, MCX-SX, MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"No",
+"bonds":"No",
+"commodity":"Yes",
+"ipo":"No",
+"etf's":"No"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"Yes",
+"automated trading":"No",
+"sms alerts":"No",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"No"
+},
+"broker_fee":
+{
+"trading_account_opening":"300",
+"trading_demat_account_opening":"650",
+"commodity_account_opening":"300",
+"trading_account_amc":"0",
+"demat_account_amc":"300"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Intraday":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Equity Options":"Rs 20 per executed order",
+"Currency Futures":"0.01% or Rs. 20/Trade whichever is lower",
+"Currency Options":"Rs 20 per executed order",
+"Commodity":"0.01% or Rs. 20/Trade whichever is lower",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"6",
+"broker_name":"Edelweiss",
+"broker_type":"Full Service Broker",
+"logo":"edelweiss",
+"broker_supported_exchange":"BSE, NSE, MCX, NCDEX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"0",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"500,2nd Year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.20%",
+"Equity Intraday":"0.02% of Turnover",
+"Equity Futures":"0.02% of Turnover",
+"Equity Options":"Rs 80 per lot",
+"Currency Futures":"0.015% of Turnover",
+"Currency Options":"Rs 10 per lot",
+"Commodity":"0.02% of Turnover",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"7",
+"broker_name":"Angel broking limited",
+"broker_type":"Full Service Broker",
+"logo":"angelbroking",
+"broker_supported_exchange":"BSE, NSE, MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's":"No"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"Yes",
+"automated trading":"No",
+"sms alerts":"No",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"No"
+},
+"broker_fee":
+{
+"trading_account_opening":"0",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"450, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Angel Classic",
+"Equity Delivery":"0.28%",
+"Equity Intraday":"0.0225% of Turnover",
+"Equity Futures":"0.0225% of Turnover",
+"Equity Options":"Rs 36 per lot",
+"Currency Futures":"Rs 7 per lot",
+"Currency Options":"Rs 36 per lot",
+"Commodity":"0.03% of Turnover",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"8",
+"broker_name":"Nirmal Bang",
+"broker_type":"Full Service Broker",
+"logo":"nirmalbang",
+"broker_supported_exchange":"NSE, BSE, MCX-SX, MCX, NCDEX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"0",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"225,2nd Year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.20%",
+"Equity Intraday":"0.02% of Turnover",
+"Equity Futures":"0.02% of Turnover",
+"Equity Options":"Rs 50 per lot",
+"Currency Futures":"0.02% of Turnover",
+"Currency Options":"Rs 50 per lot",
+"Commodity":"0.01% of Turnover",
+"minimum_brokerage":"NIL"
+}
+},
+
+{
+"broker_number":"9",
+"broker_name":"Axis Direct",
+"broker_type":"Full Service Broker",
+"logo":"axissecurities",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"-",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"N.A",
+"trading_account_amc":"NIL",
+"demat_account_amc":"650, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Fixed Plan",
+"Equity Delivery":"0.50%",
+"Equity Intraday":"0.05% of Turnover",
+"Equity Futures":"0.05% of Turnover",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"0.05% of Turnover",
+"Currency Options":"Rs 100 per lot",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 20 per lot"
+}
+},
+
+{
+"broker_number":"10",
+"broker_name":"HDFC securities",
+"broker_type":"Full Service Broker",
+"logo":"hdfc",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"11",
+"broker_name":"Motilal Oswal securities limited",
+"broker_type":"Full Service Broker",
+"logo":"motilaloswal",
+"broker_supported_exchange":"BSE, NSE, MCX, NCDEX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"12",
+"broker_name":"IDBI capital",
+"broker_type":"Full Service Broker",
+"logo":"idbi",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"No",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"700",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"350 per annum"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"13",
+"broker_name":"sbicap securities limited",
+"broker_type":"Full Service Broker",
+"logo":"sbicap",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"-",
+"trading_demat_account_opening":"850",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"350"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50%",
+"Equity Intraday":"0.075%",
+"Equity Futures":"0.05%",
+"Equity Options":"Rs 100 per lot",
+"Currency Futures":"0.03%",
+"Currency Options":"Rs 30 per lot",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 0.05 for Cash, Rs 0.01 for future"
+}
+},
+
+{
+"broker_number":"14",
+"broker_name":"kotak securities limited",
+"broker_type":"Full Service Broker",
+"logo":"kotak",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"750",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"Rs 50 per month"
+},
+"brokerage":
+{
+"plan":"Fixed brokerage Plan",
+"Equity Delivery":"0.49%",
+"Equity Intraday":"0.049%",
+"Equity Futures":"0.049%",
+"Equity Options":"Rs 300 each lot",
+"Currency Futures":"",
+"Currency Options":"",
+"Commodity":"0.070%",
+"minimum_brokerage":"4 paise for delivery and 3 paise for Intraday and Futures orders"
+}
+},
+
+{
+"broker_number":"15",
+"broker_name":"standard chartered",
+"broker_type":"Full Service Broker",
+"logo":"stanc",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+{
+"broker_number":"16",
+"broker_name":"Anand Rathi",
+"broker_type":"Full Service Broker",
+"logo":"anandrathi",
+"broker_supported_exchange":"BSE, NSE, MCX, NCDEX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"17",
+"broker_name":"India infoline limited",
+"broker_type":"Full Service Broker",
+"logo":"iifl",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"Yes",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"750",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"-",
+"trading_account_amc":"400 per annum",
+"demat_account_amc":"0"
+},
+"brokerage":
+{
+"plan":"Flat brokerage plan",
+"Equity Delivery":"0.50%",
+"Equity Intraday":"0.05%",
+"Equity Futures":"0.05%",
+"Equity Options":"1% of Premium or Rs.100/- per lot whichever is higher",
+"Currency Futures":"Rs 25 per lot",
+"Currency Options":"Rs 10 per lot",
+"Commodity":"0.05%",
+"minimum_brokerage":" 0.05 per share or 0.05% whichever is higher"
+
+}
+},
+
+{
+"broker_number":"18",
+"broker_name":"Karvy Group",
+"broker_type":"Full Service Broker",
+"logo":"karvy",
+"broker_supported_exchange":" BSE, NSE, MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"0,minimum 10k margin",
+"trading_demat_account_opening":"0",
+"commodity_account_opening":"Rs 100",
+"trading_account_amc":"NIL",
+"demat_account_amc":"650, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Basic Plan",
+"Equity Delivery":"0.50%",
+"Equity Intraday":"0.05%",
+"Equity Futures":"0.05%",
+"Equity Options":"Rs 90 each lot",
+"Currency Futures":"",
+"Currency Options":"",
+"Commodity":"",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"19",
+"broker_name":"A C choksi",
+"broker_type":"Full Service Broker",
+"logo":"acchoksi",
+"broker_supported_exchange":"BSE, NSE",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"Yes",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"999",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.50% or min Rs.25",
+"Equity Intraday":"0.50% or min Rs.25",
+"Equity Futures":"0.05% or min Rs.25",
+"Equity Options":"Rs 100 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs 25"
+}
+},
+
+{
+"broker_number":"20",
+"broker_name":"Geojit BNP Paribas",
+"broker_type":"Full Service Broker",
+"logo":"geojitbnp",
+"broker_supported_exchange":"BSE, NSE, MCX-SX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"Yes",
+"bonds":"Yes",
+"commodity":"No",
+"ipo":"Yes",
+"etf's":"Yes"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"Yes",
+"online platform":"Yes",
+"broker assistance":"Yes",
+"mobile app":"Yes",
+"research reports":"Yes"
+},
+"broker_fee":
+{
+"trading_account_opening":"",
+"trading_demat_account_opening":"400",
+"commodity_account_opening":"0",
+"trading_account_amc":"NIL",
+"demat_account_amc":"750, 2nd year Onwards"
+
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.30%",
+"Equity Intraday":"0.03%",
+"Equity Futures":"0.03%",
+"Equity Options":"Rs 125 each lot",
+"Currency Futures":"Rs. 23/- per Contract",
+"Currency Options":"Rs. 20/- per Contract",
+"Commodity":"N.A",
+"minimum_brokerage":"Rs.20 per Contract or 1 paisa per share whichever is higher"
+}
+},
+
+{
+"broker_number":"21",
+"broker_name":"SAS Online",
+"broker_type":"Discount Broker",
+"logo":"sasonline",
+"broker_supported_exchange":"NSE,BSE,MCX",
+"broker_investment_type":
+{
+"stocks":"Yes",
+"options":"Yes",
+"currency":"Yes",
+"futures":"Yes",
+"mutual funds":"No",
+"bonds":"No",
+"commodity":"Yes",
+"ipo":"No",
+"etf's":"No"
+},
+"broker_feature":
+{
+"3 in 1 account" :"No",
+"call and trade":"Yes",
+"automated trading":"Yes",
+"sms alerts":"No",
+"online platform":"Yes",
+"broker assistance":"No",
+"mobile app":"No",
+"research reports":"No"
+},
+"broker_fee":
+{
+"trading_account_opening":"200",
+"trading_demat_account_opening":"200",
+"commodity_account_opening":"200",
+"trading_account_amc":"NIL",
+"demat_account_amc":"NIL"
+},
+"brokerage":
+{
+"plan":"Standard Plan",
+"Equity Delivery":"0.1% or Rs. 9/Order whichever is lower",
+"Equity Intraday":"0.01% or Rs. 9/Order whichever is lower",
+"Equity Futures":"Rs. 9/Order",
+"Equity Options":"Rs. 9/Order",
+"Currency Futures":"0.99 per lot or Rs. 9/Order whichever is lower",
+"Currency Options":"0.99 per lot or Rs. 9/Order whichever is lower",
+"Commodity":"Rs. 9/Order",
+"minimum_brokerage":"NIL"
+}
+
+}
+
+]

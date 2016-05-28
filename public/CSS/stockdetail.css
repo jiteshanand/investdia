@@ -1,0 +1,504 @@
+.stockdetail-wrapper{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+	   background-color: white;  
+    background-image: url(../images/bg-repeat.svg); 
+    background-position: center;
+    background-size: 4px,cover,cover;
+    min-height: 800px;
+    position: relative;
+    }
+
+.stockdetail-content{
+	padding: 0px !important; 
+  margin-left: 10px;
+}
+
+.title-logo{
+  margin-left: 15px;
+}
+.stockdetail-home-header{
+  background-color: #363B41;
+  display: flex;
+  min-height: 4vh;
+}
+.stock-data-container{
+  display: flex;
+  background-image: url(../images/bg-repeat.svg);
+    background-position: center;
+    background-size: 15px,cover,cover;
+    min-height: 55vw;
+    background-color: rgba(37,37,37,0.88);
+    width: 78%;
+    margin-left: 14%;
+}
+
+.stockdata{
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+}
+.stock-header{
+    display: flex;
+    /*border: 2px groove #737171;*/
+    background-color: rgba(47, 46, 46, 0.5);
+    color: rgb(175, 172, 172);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    
+    /*box-shadow: 0 10px 6px -3px #777;*/
+    min-width: 355px;
+}
+.stock-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    
+}
+.title-symbol{
+	font-family: oswald;
+	font-size: 35px;
+  letter-spacing: 2px;
+}
+.title-name{
+	font-family: bitter;
+	font-size: 20px;
+}
+
+.curr-price{
+	font-family: arvo;
+	font-size: 32px;
+}
+.curr-cp{
+	font-size: 16px;
+  margin-left: 10px;
+}
+.curr-change{
+	font-size: 16px;
+    float: right;
+    margin-left: auto;
+    margin-top: 8px;
+}
+.stock-value{
+  display: block;
+}
+
+.stock-stats ul{
+	    padding: 0px;
+    font-size: 16px;
+    display: flex;
+}
+
+.stock-stats ul li{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 6px;
+}
+.info-title{
+	float: left;
+	font-family: arvo;
+	font-size: 17px;
+}
+.info-value{
+	float: right;
+    margin-left: auto;
+    font-family: arvo;
+    font-size: 17px;
+}
+.curr-c{
+    font-size: 20px;
+    background-color: red;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+}
+
+.stock-top-info{
+	display: flex;
+  margin-left: auto;
+}
+.stock-bottom-info{
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid #424242;
+    background-color: rgba(47, 46, 46, 0.5);
+    color: rgb(175, 172, 172);
+}
+.stock-stats{
+      width: 100%;
+    
+}
+.stock-graph{
+	padding: 5px;
+}
+
+.stock-buttons{
+
+  display: flex;
+  
+}
+.last-updated{
+
+  text-align: center;
+  margin-bottom: 5px;
+}
+.addto-btn{
+
+  margin-left: auto !important;
+}
+/*=====================================================================================================================*/
+
+
+.btn-round {
+  border-radius: 40px;
+}
+.btn-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  /* @only demo */
+  margin: 10px;
+}
+.btn-switch > input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  left: -100%;
+  top: -100%;
+}
+.btn-switch > input[type="checkbox"] + .btn {
+  background-color: transparent;
+  border-color: #d9534f;
+  color: #d9534f;
+}
+.btn-switch > input[type="checkbox"] + .btn > em {
+  display: inline-block;
+  border: 1px solid #d9534f;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 0 4px 0 0;
+  top: 0;
+  font-size: 10px;
+  text-align: center;
+}
+.btn-switch > input[type="checkbox"] + .btn > em:before {
+  opacity: 0;
+}
+.btn-switch > input[type="checkbox"]:checked + .btn {
+  background-color: #d9534f;
+  color: #fff;
+}
+.btn-switch > input[type="checkbox"]:checked + .btn > em {
+  background-color: #fff;
+  color: #d9534f;
+}
+.btn-switch > input[type="checkbox"]:checked + .btn > em:before {
+  opacity: 1;
+}
+.btn-switch-primary > input[type="checkbox"] + .btn {
+  border-color: #286090;
+  color: #286090;
+}
+.btn-switch-primary > input[type="checkbox"] + .btn > em {
+  border-color: #286090;
+}
+.btn-switch-primary > input[type="checkbox"]:checked + .btn {
+  background-color: #428bca;
+}
+.btn-switch-primary > input[type="checkbox"]:checked + .btn > em {
+  color: #428bca;
+}
+.btn-switch-success > input[type="checkbox"] + .btn {
+  border-color: #236B2D;
+  color: #236B2D;
+}
+.btn-switch-success > input[type="checkbox"] + .btn > em {
+  border-color: #236B2D;
+}
+.btn-switch-success > input[type="checkbox"]:checked + .btn {
+  background-color: #26ae90;
+}
+.btn-switch-success > input[type="checkbox"]:checked + .btn > em {
+  color: #26ae90;
+}
+
+/*===================================================================================================*/
+.peer-container .grid-body{
+
+  width: 50%;
+}
+
+.peer-container{
+
+background-color:  rgba(47, 46, 46, 0.5)
+}
+
+.peer-wrap{
+    /*background-color: rgb(74, 74, 74);*/
+     border: 2px groove #555;
+    border-radius: 5px;
+    margin: 10px;
+}
+.peer-widget{
+    display: block;
+    min-width: 230px;
+    padding: 10px;
+    /*border-bottom: solid 1px rgba(212, 167, 165, 0.64);*/
+    border-bottom: 2px groove #6C6B6B;
+    padding-right: 20px;
+}
+
+.peer-widget ul{
+padding: 0px;
+margin: 0px
+}
+
+.peer-widget .row1{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.peer-widget .row2{
+  display: flex;
+}
+
+.peer-wrap a:hover,.peer-wrap a:focus{
+text-decoration: none;
+}
+
+.peer-symbol{
+      font-size: 18px;
+    font-family: roboto;
+    color: #ADADAD;
+    font-weight: 500;
+}
+.peer-price{
+      font-size: 16px;
+    font-weight: 600;
+    color: #ADADAD;
+    font-family: arvo;
+}
+.peer-price,.peer-cp{
+
+  margin-left: auto;
+}
+
+.peer-change{
+font-size: 16px;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.peer-cp{
+
+  font-size: 16px;
+    font-weight: bold;
+    color: #ADADAD;
+}
+/*.peer-header{
+
+  padding: 6px;
+    text-align: center;
+    /*background-color: #DEDEDE;*/
+}
+*/
+
+
+/*=======================================================================*/
+
+
+.data-render{
+  padding-left:0px;
+}
+
+.tooltip-head{
+  /*background-color: #807F7F;*/
+  margin:0px;
+  padding:5px;
+  width: 100%;
+}
+
+.tooltip-head-text{
+ color:white;
+  font-size:13px; 
+  font-family:arvo;
+
+}
+
+.tooltip-body{
+  width: 100%;
+  border: 1px solid #CAC9C9;
+  background-color: #F7F7F7;
+  margin-top: -30px;
+}
+.series-name{
+color: #565353;
+    padding: 4px;
+    font-size: 13px;
+    font-family: bitter;
+}
+.series-data{
+text-align: right;
+    padding: 4px;
+    font-size: 13px;
+    color: #31708f;
+}
+.tooltip-body tr{
+border: 1px dashed #CAC9C9;
+}
+
+/*==========================================================*/
+
+.newsdata,.tweetdata{
+  background: rgba(47, 46, 46, 0.5);
+}
+
+.feed-url{
+  color: #AFACAC;
+}
+.dailynews-item,.tweet-item{
+
+      line-height: 4vh;
+      border-bottom: 2px groove #6C6B6B;
+}
+.dailynews-title{
+  font-size: 17px;
+    word-spacing: 1.5px;
+    font-family: arvo;
+    padding: 10px;
+    border-bottom: 2px groove #6C6B6B;
+    
+}
+
+.tweet-title{
+   color: #AFACAC;
+  font-size: 17px;
+    word-spacing: 1.5px;
+    font-family: arvo;
+    padding: 10px;
+    
+}
+
+.tweet-user{
+  color: #E4E4E6;
+    text-align: right;
+    margin-right: 20px;
+}
+.news-header,.peer-header,.tweet-header{
+font-size: 25px;
+color:#CCC;  
+text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.stock-analysis{
+
+    background-color: rgba(128, 128, 128, 0.35);
+  border-radius: 5px;
+  border: 2px solid rgb(164, 205, 207);
+   text-align: center;
+    font-size: 25px;
+    font-family: bitter;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+/*==========================================================*/
+
+.radioset {
+background: rgba(47, 46, 46, 0.5);
+    border: 3px groove #716F6F;
+  margin: auto;
+}
+.radioset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+.radioset ul::before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 12.5%;
+  right: 12.5%;
+  height: 6px;
+  margin-top: -3px;
+  background: #CCC;
+  box-shadow: inset 0 3px 5px -4px #000, 0 1px #fff;
+}
+.radioset li {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+}
+.radioset [type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+.radioset label {
+    line-height: 30px;
+    font-size: 16px;
+    padding-bottom: 40px;
+    display: block;
+    color: #9d9d9d;
+}
+.radioset label::before, .radioset label::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  border-radius: 50%;
+  transform: translate3d(0, 0, 0);
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.35s all;
+  -o-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.35s all;
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.35s all;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.35s all;
+}
+.radioset label::before {
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 0 solid #CCC;
+  background: #CCC;
+  transform: scale(0.7);
+  box-shadow: inset 0 3px 5px -4px #000, 0 2px 1px -1px #fff;
+}
+.radioset label::after {
+  width: 13px;
+  height: 13px;
+     margin: -7px 0 0 -6px;
+    background: rgb(5, 134, 8);
+  transform: scale(0);
+  opacity: 0;
+}
+.radioset :checked + label::before, .radioset :checked + label::after {
+  -moz-transition: cubic-bezier(1, -1, 0.4, 1.4) 0.4s all;
+  -o-transition: cubic-bezier(1, -1, 0.4, 1.4) 0.4s all;
+  -webkit-transition: cubic-bezier(1, -1, 0.4, 1.4) 0.4s all;
+  transition: cubic-bezier(1, -1, 0.4, 1.4) 0.4s all;
+}
+.radioset :checked + label::before {
+  transform: scale(1);
+}
+.radioset :checked + label::after {
+  transform: scale(1);
+  opacity: 1;
+  box-shadow: inset 0 -5px 5px -5px #ccc, 0 2px 5px -2px #000;
+}

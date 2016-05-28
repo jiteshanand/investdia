@@ -1,0 +1,262 @@
+<header class="global-header">
+ 
+<nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+  
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+           <div class="logo-wrapper">
+     <a href="www.investdia.com">Investdia</a>
+  </div>
+    </div>
+
+ <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+    <ul class="top-menu navbar-nav nav">
+    <li class="menu-item"><a href="/home" class="home-link">HOME</a></li>
+    <li class="menu-item"><a href="#services" class="service-link">LOGIN</a></li>
+    <li class="menu-item"><a href="/blog" target="_blank" class="blog-link">BLOG</a></li>
+    <li class="menu-item"><a href="#about" class="about-link">ABOUT</a></li>
+    <li class="menu-item"><a href="#contact" class="contact-link">CONTACT US</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+</header>
+
+<div id="main" class="site-content">
+<main id="content" role="main" itemprop="mainContentOfPage">
+<div id="home-splash-mf" class="intro-image-mf active">
+
+<div class="banner-mf wrapper">
+ <h1>Don't want to research or invest in equity.<br>Mutual Funds are the investment you are looking for.</h1>
+   <p>We will help you to find the best fund available in the market.</p>
+  <form class="form-wrapper cf col-lg-6 col-md-6 col-sm-6 col-xs-6" method="POST" ng-submit="searchthisstock()">
+    <input type="text" name="query" placeholder="Search here for mutual funds...&nbsp;&nbsp;&nbsp;&nbsp;ex. Axis,Franklin templeton,UTI etc" ng-model="search_stock" required>
+    <button type="submit" name="search" >Search</button>
+</form>
+</div>
+</div>
+
+
+
+<div class="mf-detail-container">
+<section class="mf-filter">
+<div class="filter-heading">
+  <span>Filter Results</span>
+</div>
+
+<form name="filterForm" class="filter-form">
+
+<!-- <div class="family-chkbox"> -->
+<div class="fund-family-title">
+<div>Fund Family</div>
+<!-- <div class="expand-icon"><i class="fa fa-plus-square-o" ng-click="collapse = !collapse"></i></div> -->
+<div class="filter-icon">
+  <i class="fa fa-plus-square-o" ng-click="showfamily=true" ng-hide="showfamily"></i>
+  <i class="fa fa-minus-square-o" ng-click="showfamily=false" ng-hide="!showfamily"></i>
+</div>
+</div>
+<div class="mf_family_container">
+<div ng-repeat = "family in familyunit" class="family_1" ng-show="showfamily">
+    <label>
+    <input type="checkbox" ng-click="includeFund(family.id)">
+<div class="check-label">{{family.name}}</div>
+  </label>
+</div>
+</div>
+
+<!-- </div> -->
+<div class="mf_filters">
+
+<div class="filter-sub-heading">
+<span>Mutual Fund Category</span>
+</div>
+<select ng-model="mfcateg" class="mf_categ" ng-options="category for category in mfcategory">
+<option value="">All</option>
+</select>
+
+<div class="filter-sub-heading">
+<span>Mutual Fund Type</span>
+</div>
+<select ng-model="mftype" -options="mtype for mtype in mftypes">
+<option value="">All</option>
+</select>
+
+<div class="filter-sub-heading">
+<span>Crisil Rating</span>
+</div>
+<select ng-model="mfrating" class="mf_rating" ng-options="crating for crating in crisilrating">
+<option value="">All</option>
+</select>
+
+<div class="filter-sub-heading">
+<span>Benchmark Index</span>
+</div>
+<select ng-model="fundbench" class="fund_bench" ng-options="index for index in benchmark">
+<option value="">All</option>
+</select>
+
+<div class="filter-main-heading">
+<span>Fund Features</span>
+<div class="filter-icon">
+  <i class="fa fa-plus-square-o" ng-click="show=true" ng-hide="show"></i>
+  <i class="fa fa-minus-square-o" ng-click="show=false" ng-hide="!show"></i>
+</div>
+</div>
+<div class="feature-filter-content" ng-show="show">
+<div class="filter-sub-heading">
+<span>Manager Experience (In years)</span>
+</div>
+<!-- <select ng-model="fundexp" class="fund_exp" ng-options="exp for exp in managerexp"> -->
+<div class="mf-manager-exp">
+<input class="min-text" ng-model="search.exp_min"/>
+<input class="max-text" ng-model="search.exp_max"/>
+<slider-range min="0" max="50" value-min="search.exp_min" value-max="search.exp_max"></slider-range>
+<br>
+</div>
+<!-- </select> -->
+<div class="filter-sub-heading">
+<span>Inception Date (In years)</span>
+</div>
+<!-- <select ng-model="fundexp" class="fund_exp" ng-options="exp for exp in managerexp">
+</select> -->
+<div class="mf-incetion-since">
+<input class="min-text" ng-model="incept_min"/>
+<input class="max-text" ng-model="incept_max"/>
+<slider-range min="0" max="50" value-min="incept_min" value-max="incept_max"></slider-range>
+<br>
+</div>
+
+<div class="filter-sub-heading">
+<span>Risk Index</span>
+  <div class="risk-type" ng-switch on="risk">
+    <div ng-switch-when=1>Low</div>
+    <div ng-switch-when=2>Moderate Low</div>
+    <div ng-switch-when=3>Moderate</div>
+    <div ng-switch-when=4>Moderate High</div>
+    <div ng-switch-when=5>High</div>
+     <div ng-switch-default>All</div>
+  </div>
+</div>
+
+  <form class="stock-option-form"> 
+     <fieldset class="risk-set">
+    <ul>
+      <li><input type="radio" ng-model="risk" name="content" ng-value=1>
+      <label for="radio1"></label>
+      <li><input type="radio" ng-model="risk" name="content" ng-value=2>
+      <label for="radio2"></label>
+      <li><input type="radio" ng-model="risk" name="content" ng-value=3>
+      <label for="radio3"></label>
+      <li><input type="radio" ng-model="risk" name="content" ng-value=4>
+      <label for="radio4"></label>
+      <li><input type="radio" ng-model="risk" name="content" ng-value=5>
+      <label for="radio5"></label>
+      <li><input type="radio" ng-model="risk">
+      <label for="radio6"></label>
+    </ul>
+  </fieldset>
+    </form>
+
+
+</div>
+</div>
+</form>
+</section>
+
+ <section class="mf-display">
+ <div class="mf-block" ng-repeat = "mf in mf_schemes | filter:fundFilter"> 
+    <div class="mf-details">
+    <div class="mf_line1">
+      <div class="line1_mf_name">{{mf.amc_name}}</div>
+      <div class="line1_mf_number">{{filteredItems.length}} of {{mf.schemes.length}} schemes matching your criteria.</div>
+    </div>
+
+<ul class="mf-list" ng-class="grid-list">
+ <li class="grid-head th">
+    <ul class="mf-heading">
+      <li style="width:20%">Scheme Name 
+      <!-- <a ng-click="sort_by('name')"><i class="fa fa-chevron-down"></i></a> -->
+      </li>
+      <li style="width:13%">Minimum Investment
+  <!--       <a ng-click="setOrder('environment.hostname_external')"> <i class="fa fa-chevron-down"></i></a>
+        <a ng-click="setOrder('-environment.hostname_external')"> <i class="fa fa-chevron-up"></i></a> -->
+      </li>
+      <li style="width:12%">Minimum SIP
+<!--         <a ng-click="setOrder('environment.hostname_external')"> <i class="fa fa-chevron-down"></i></a>
+        <a ng-click="setOrder('-environment.hostname_external')"> <i class="fa fa-chevron-up"></i></a> -->
+      </li>
+       <li style="width:15%">Exit Load(%)
+  <!--       <a ng-click="setOrder('environment.hostname_external')"> <i class="fa fa-chevron-down"></i></a>
+        <a ng-click="setOrder('-environment.hostname_external')"> <i class="fa fa-chevron-up"></i></a> -->
+      </li>
+      <li style="width:15%">Benchmark Index
+      </li>
+      <li style="width:13%">Manager
+      </li>
+
+      <li style="width:12%">Action
+      </li>
+    </ul>
+  </li>
+
+<div class="mf-data-wrapper">
+  <li class="mf-detail tr" ng-repeat="scheme in filteredItems = (mf.schemes | filter:{scheme_category:mfcateg || undefined,scheme_type:mftype || undefined,rating:mfrating || undefined,riskindex:risk || undefined}:true |exp_Range:search.exp_min:search.exp_max | inception_Range:incept_min:incept_max ) | limitTo:limitmf" >
+<!-- <li class="animate-repeat mf-detail" ng-repeat="scheme in mf.schemes"> -->
+<!-- <div class="firm-detail" ng-repeat="firm in firms"> -->
+<div class="mf-stat-container tr">
+  <div class="mf-name td" data-table-header="Scheme Name">
+    <a ng-href="mf/{{scheme.scheme_number}}" class="mf-scheme">{{scheme.scheme_name}}</a>
+<!--     <div star-rating rating-value='scheme.rating' on-rating-selected="getSelectedRating(scheme.rating)"></div> -->
+</div>
+  
+  <div class="mf-min-invest td" data-table-header="Minimum Investment">{{scheme.scheme_minimum}}</div>
+  <div class="mf-min-sip td" data-table-header="Minimum SIP">3000</div>
+  <div class="mf-load td" data-table-header="Exit Load">{{scheme.scheme_load}}</div>
+  <div class="mf-benchmark td" data-table-header="Benchmark Index">{{scheme.scheme_benchmark}}</div>
+  <div class="mf-manager td" data-table-header="Manager">
+  <div ng-repeat = "manager in scheme.scheme_manager"><a ng-href="#">{{manager.name}}</a></div>
+  </div>
+
+
+ 
+<!--     <div class="mf-return">
+      <div class="return-data">
+        <div class="ytd-data">{{scheme.return.ytd}}%</div>
+        <div class="data-1mnth">{{scheme.return["1month"]}}%</div>
+        <div class="data-3mnth">{{scheme.return["3month"]}}%</div>
+        <div class="data-6mnth">{{scheme.return["6month"]}}%</div>
+      </div>
+    </div> -->
+    <div class="mf-action td" data-table-header="Action">
+  
+    <button type="button" class="btn btn-success mf-start">Buy</button>
+    <button type="button" class="btn btn-primary mf-start">SIP</button>  
+    </div>
+</div>
+
+
+</li>
+</div>
+
+</ul>
+<!-- ng-click="showfamily=true" ng-hide="showfamily" -->
+<div class="no-record" ng-show="filteredItems.length == 0">No scheme found that matched  specified criteria.</div>
+<div class="show-more" ng-click="limitmf = limitmf + (filteredItems.length-limitmf);display=true" ng-show="filteredItems.length > 3" ng-hide="display"><a href=""><i class="fa fa-plus-circle"></i> Show more</a>
+</div>
+<div class="show-less" ng-hide="!display" ng-show="filteredItems.length > 3" ng-click="limitmf = 3;display=false"><a href=""><i class="fa fa-minus-circle"></i> Show Less</a>
+</div>
+
+   </div>
+ </div>
+ </section>
+ </div>
+
+</div>

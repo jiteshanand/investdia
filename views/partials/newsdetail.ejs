@@ -1,0 +1,15 @@
+  	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+<div class="feed-container col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="feed-item" ng-repeat="feed in googlenewsfeed">
+          <div class="text-holder">
+          <div class="text-header">
+            <div class="feed-title col-lg-10 col-md-10 col-sm-10 col-xs-10">{{feed.title}}</div>
+            <div class="title-date col-lg-2 col-md-2 col-sm-2 col-xs-2">{{feed.date |date : DD/MM/YYYY}}</div>
+            </div>
+            <br>
+            <div class="feed-description"><p>{{feed.description}}</p></div>
+            <a class="feed-url" href="{{feed.url}}" target="_blank">Read complete article here.</a>
+         </div>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>

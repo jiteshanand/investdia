@@ -1,0 +1,108 @@
+<header class="global-header">
+ 
+<nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+  
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+           <div class="logo-wrapper">
+     <a href="www.investdia.com">Investdia</a>
+  </div>
+    </div>
+
+ <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+    <ul class="top-menu navbar-nav nav">
+    <li class="menu-item"><a href="/home" class="home-link">HOME</a></li>
+    <li class="menu-item"><a href="#services" class="service-link">LOGIN</a></li>
+    <li class="menu-item"><a href="/blog" target="_blank" class="blog-link">BLOG</a></li>
+    <li class="menu-item"><a href="#about" class="about-link">ABOUT</a></li>
+    <li class="menu-item"><a href="#contact" class="contact-link">CONTACT US</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+</header>
+
+
+<div id="main" class="site-content">
+<main id="content" role="main" itemprop="mainContentOfPage">
+<div id="home-splash-broker" class="intro-image-broker active">
+
+<div class="banner-broker wrapper">
+<h1>Looking for a Broker<br>to make life and investment easy.</h1>
+  <p>We will help you to find the best broker available in the business to increase your wealth.</p>
+  <form class="form-wrapper cf col-lg-6 col-md-6 col-sm-6 col-xs-6" method="POST" ng-submit="searchthisstock()">
+    <input type="text" name="query" placeholder="Search here for brokers...&nbsp;&nbsp;&nbsp;&nbsp;Enter broker's name or brokerage firm name" ng-model="search_stock"  required>
+    <button type="submit" name="search" >Search</button>
+</form>
+</div>
+</div>
+
+<section class="find-broker">
+<div>
+  <ul>
+<li class="broker-option">
+  <a href="/broker/city">
+    <div class="icon"><i class="fa fa-globe fa-3dicon"></i></div>
+    <a href="" style="text-decoration:none;">
+    <span class="service-title">Explore Brokers by<br> City</span>
+    </a>
+    <p class="description"></p>
+  </a>
+  </li>
+
+    <li class="broker-option">
+    <a href="/firms">
+    <div class="icon"><i class="fa fa-university fa-3dicon"></i></div>
+    <a href="" style="text-decoration:none;">
+    <span class="service-title">Explore Brokers by<br> Brokerage house</span>
+    </a>
+    <p class="description"></p>
+    </a>
+  </li>
+</ul>
+</div>
+
+  </section>
+<!-- <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+  </div> -->
+
+  <!-- <div class="brokers col-lg-8 col-md-8 col-sm-8 col-xs-8">
+  <section class="profile" ng-repeat="broker in users | filter:{username:search_broker} |filter:{type:filterbroker()} | orderBy:'title':reverse_broker">
+    <div class="profile-header"></div>
+    <div class="profile-content"><img src="../images/future1.jpg" alt="Broker's photo"/>
+      <a href="" style="text-decoration:none;"><h1>{{broker.username}}</h1></a>
+      <p>{{broker.employer}}</p>
+      <button type="button" class="profile-butn">Contact me</button>  
+    <ul class="profileCard_social">
+      <li class="profileCard_socialItem"><a href="#" class="profileCard_socialLink"><i class="fa fa-phone"></i></a></li>
+      <li class="profileCard_socialItem"><a href="#" class="profileCard_socialLink"><i class="fa fa-twitter"></i></a></li>
+      <li class="profileCard_socialItem"><a href="#" class="profileCard_socialLink"><i class="fa fa-facebook"></i></a></li>
+      <li class="profileCard_socialItem"><a href="#" class="profileCard_socialLink"><i class="fa fa-link"></i></a></li>
+      <li class="profileCard_socialItem"><a href="#" class="profileCard_socialLink"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+    </div>
+    <div>
+    <ul class="Statistics">
+      <li>{{broker.followers}}<span>followers</span></li>
+      <li>{{broker.connections}}<span>following</span></li>
+    </ul>
+    </div>
+  </section>
+
+</div> -->
+
+
+
+ 
+
+
+
+</div>

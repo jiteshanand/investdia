@@ -1,0 +1,343 @@
+<header class="global-header">
+ 
+<nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+  
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+           <div class="logo-wrapper">
+     <a href="www.investdia.com">Investdia</a>
+  </div>
+    </div>
+
+ <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+    <ul class="top-menu navbar-nav nav">
+    <li class="menu-item"><a href="/home" class="home-link">HOME</a></li>
+    <li class="menu-item"><a href="#services" class="service-link">LOGIN</a></li>
+    <li class="menu-item"><a href="/blog" target="_blank" class="blog-link">BLOG</a></li>
+    <li class="menu-item"><a href="#about" class="about-link">ABOUT</a></li>
+    <li class="menu-item"><a href="#contact" class="contact-link">CONTACT US</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+</header>
+
+<div id="main" class="site-content">
+<main id="content" role="main" itemprop="mainContentOfPage">
+<div id="home-splash-firm" class="intro-image-firm active">
+
+<div class="banner-firm wrapper">
+ <h1>Brokerage firms are the connection between<br>you and your investment.</h1>
+  <p>We will help you to maximize the return on investment by selecting the best brokerage firm.</p>
+  <form class="form-wrapper cf col-lg-6 col-md-6 col-sm-6 col-xs-6" method="POST" ng-submit="searchthisstock()">
+    <input type="text" name="query" placeholder="Search here for brokerage firms...&nbsp;&nbsp;&nbsp;&nbsp;ex. sharekhan,IIFL,ICICIDirect etc" ng-model="search_stock"  required>
+    <button type="submit" name="search" >Search</button>
+</form>
+</div>
+</div>
+
+
+<div class="firm-detail-container">
+<section class="firm-filter">
+<div class="filter-heading">
+  <span>Filter Results</span>
+</div>
+<form name="filterForm" class="filter-form">
+
+<div class="investment-type-heading">
+<span>Broker Type</span>
+</div>
+<select ng-model="brokertype" class="broker_type" ng-options="btype for btype in broker_type">
+<option value="">All Brokers</option>
+</select>
+
+
+<div class="investment-type-heading">
+<span>Investment Type</span>
+</div>
+<div class="filter-investment-type">
+<div ng-repeat = "investment in investment_type" class="investment">
+    <label>
+    <input type="checkbox" ng-click="includeType(investment)">
+<div class="check-label">{{investment}}</div>
+  </label>
+</div>
+
+   </div>
+ </form>
+
+ <form name="featureForm" class="filter-form">
+<div class="investment-type-heading">
+<span>Product Feature</span>
+</div>
+<div class="filter-investment-type">
+<div ng-repeat = "feature in product_feature" class="investment">
+    <label>
+    <input type="checkbox" ng-click="includeFeature(feature)">
+<div class="check-label">{{feature}}</div>
+  </label>
+</div>
+
+
+   </div>
+ </form>
+
+</section>
+<section class="firm-display"> 
+
+<!-- <table class="table table-bordered table-condensed table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="col-lg-3 col-md-3 col-sm-3 col-xs-3 firm-heading">
+                    Investment Lab rating 
+                    <a ng-click="setOrder('title')"><i class="fa fa-chevron-down"></i></a>
+                    <a ng-click="setOrder('-title')"> <i class="fa fa-chevron-up"></i></a></th>
+                <th class="col-lg-3 col-md-3 col-sm-3 col-xs-3 firm-heading">Comission Rate
+                    <a ng-click="setOrder('environment.title')"> <i class="fa fa-chevron-down"></i></a>
+                    <a ng-click="setOrder('-environment.title')"> <i class="fa fa-chevron-up"></i></a></th>
+                <th class="col-lg-3 col-md-3 col-sm-3 col-xs-3 firm-heading">Minimum Balance
+                    <a ng-click="setOrder('environment.hostname_external')"> <i class="fa fa-chevron-down"></i></a>
+                    <a ng-click="setOrder('-environment.hostname_external')"> <i class="fa fa-chevron-up"></i></a></th>
+                <th class="col-lg-3 col-md-3 col-sm-3 col-xs-3 firm-heading">Here for you !
+                 </th>
+            </tr>
+        </thead>
+        </table>
+ -->
+
+<ul class="broker-firm-list" ng-class="grid-list">
+ <li class="grid-head">
+      <ul class="firm-heading">
+      <li style="width:25%">Investdia rating 
+      <a ng-click="sort_by('broker_name')"><i class="fa fa-chevron-down"></i></a>
+      <!-- <a ng-click="setOrder('-title')"> <i class="fa fa-chevron-up"></i></a> -->
+      </li>
+      <li style="width:28%">Opening charges
+      <a ng-click="sort_by('broker_fee.account_opening')"> <i class="fa fa-chevron-down"></i></a>
+      <a ng-click="sort_by('-broker_fee.account_opening')"> <i class="fa fa-chevron-up"></i></a>
+      </li>
+      <li style="width:32%">Brokerage Charges
+      <a ng-click="setOrder('environment.hostname_external')"> <i class="fa fa-chevron-down"></i></a>
+      <a ng-click="setOrder('-environment.hostname_external')"> <i class="fa fa-chevron-up"></i></a>
+      </li>
+      <li style="width:15%">Here for you !</li>
+
+      </ul>
+    </li>
+    <li class="broker_firm_detail" ng-repeat="item in filteredBrokers = (pagedItems[currentPage - 1] | filter: brokerFilter |filter: featureFilter | filter:{broker_type:brokertype ||undefined}:true)" ng-class="{'last':$last}">
+
+
+
+<!-- <div class="firm-detail" ng-repeat="firm in firms"> -->
+  <div class="firm-info">
+    <img src="../images/brokerage_firms/{{item.logo}}.jpg" class="firm-img">
+    <div class="firm-name">{{item.broker_name}}</div>
+    <div star-rating rating-value='rating' on-rating-selected="getSelectedRating(rating)"></div>
+
+  <div class="firm-type">{{item.broker_type}}</div>
+<div class="firm-exchange">Trades in {{item.broker_supported_exchange}} exchanges</div>
+<br>
+   <div class="firm-social-wrapper">
+  <div class="firm-social-btn"><i class="fa fa-facebook"></i></div>
+  <div class="firm-social-btn"><i class="fa fa-twitter"></i></div>
+  <div class="firm-social-btn"><i class="fa fa-linkedin"></i></div>
+  </div>
+</div>
+  
+  <div class="firm-rate1">
+    <div class="firm-commission">
+
+    <div class="charges_label">Account Opening Charges</div>
+    <div class="opening_charges">
+        <div class="account_opening">
+        <div class="account_opening_label">Trading account:</div>
+        <div class="account_opening_value">{{item.broker_fee.trading_account_opening}}</div>
+        </div>
+
+    <div class="account_opening">
+        <div class="account_opening_label">Trading + Demat account:</div>
+        <div class="account_opening_value">{{item.broker_fee.trading_demat_account_opening}}</div>
+        </div>
+
+  <div class="account_opening">
+        <div class="account_opening_label">Commodity account:</div>
+        <div class="account_opening_value">{{item.broker_fee.commodity_account_opening}}</div>
+        </div>
+</div>
+   <div class="amc_label">Account Maintenance Charges</div>
+<div class="amc_charges">
+        <div class="account_opening">
+        <div class="account_opening_label">Trading account:</div>
+        <div class="account_opening_value">{{item.broker_fee.trading_account_amc}}</div>
+        </div>
+
+        <div class="account_opening">
+        <div class="account_opening_label">Demat account:</div>
+        <div class="account_opening_value">{{item.broker_fee.demat_account_amc}}</div>
+        </div>
+</div>
+       <!--  <div class="account_opening">
+        <div class="account_opening_label">Minimum Brokerage</div>
+        <div class="account_opening_value">{{item.broker_fee.minimum_brokerage}}</div>
+        </div> -->
+
+    </div>
+    </div>
+    <div class="firm-rate2">
+    <div class="brokerage-charges">
+    <div class="brokerage_plan">{{item.brokerage.plan}}</div>
+    <div class="brokerage_type">
+      <div class="equity_type">
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Equity Delivery:</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Equity Delivery"]}}</div>
+        </div>
+
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Equity Intraday:</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Equity Intraday"]}}</div>
+        </div>
+
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Equity Futures:</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Equity Futures"]}}</div>
+        </div>
+
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Equity Options:</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Equity Options"]}}</div>
+        </div>
+</div>
+<div class="currency_type">
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Currency Futures:</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Currency Futures"]}}</div>
+        </div>
+
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Currency Options</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Currency Options"]}}</div>
+        </div>
+</div>
+<div class="commodity_type">
+        <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Commodity</div>
+        <div class="brokerage_fee_value">{{item.brokerage["Commodity"]}}</div>
+        </div>
+      </div>
+
+         <div class="brokerage_fee">
+        <div class="brokerage_fee_label">Minimum Brokerage</div>
+        <div class="brokerage_fee_value">{{item.brokerage["minimum_brokerage"]}}</div>
+        </div>
+    </div>
+    </div>
+</div>
+   
+
+
+  <div class="start_here">
+    <button type="button" class="btn btn-success get-start" data-toggle="modal" data-target="#openaccount{{item.broker_number}}">Open Account</button>
+    <button type="button" class="btn btn-primary get-start">Explore!!</button>
+    <button type="button" class="btn btn-info get-start" data-toggle="modal" data-target="#requestcallback">Request callback</button>
+  </div>
+
+
+
+<div class="modal fade" id="openaccount{{item.broker_number}}" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Welcome to {{filteredBrokers[$index].broker_name}}.<br>Please confirm your details.</h4>
+      </div>
+      <div class="modal-body">
+      <div class="newaccount">
+      <input type="text" class="newinput" id="newaccount_name"  ng-model="accountopen_name" placeholder="Enter your name">
+      <input type="text" class="newinput" id="newaccount_mobile" ng-model="accountopen_mobile" placeholder="Mobile number">
+      <input type="text" class="newinput" id="newaccount_email" ng-model="accountopen_email" placeholder="Email Id">
+      <textarea id="newaccount_comment" cols="30" rows="3" ng-model="accountopen_comment" placeholder="Any comment like appropriate time to contact you."></textarea>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="new_openaccount()" data-dismiss="modal" data-toggle="modal1">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- </div> -->
+<!-- </div> -->
+</li>
+
+ <div class="modal1 fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal1" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Details submitted successfully.<br>We will get in touch with you soon</h4>
+      </div>
+ 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal1">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <li class="uib-pagination">
+      <uib-pager total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" max-size="maxSize" ng-change="pageChanged()"></uib-pager>
+      <p ng-if="itemsPerPage * currentPage < totalItems">
+        Showing {{ filteredBrokers.length * currentPage - filteredBrokers.length + 1 }} - {{ filteredBrokers.length * currentPage }} of {{filteredBrokers.length}} total items
+      </p>
+      <p ng-if="itemsPerPage * currentPage >= totalItems">
+        Showing {{ filteredBrokers.length * currentPage - filteredBrokers.length + 1 }} - {{ filteredBrokers.length }} of {{ filteredBrokers.length}} total items
+      </p>
+    </li>
+ </ul>
+
+
+<!-- <div class="firm-detail">
+  <div class="firm-info col-lg-3 col-md-3 col-sm-3">
+    <img src="../images/brokerage_firms/motilaloswal.jpg" class="firm-img">
+    <div class="firm-name">Motilal oswal group</div>
+    <div star-rating rating-value='rating' on-rating-selected="getSelectedRating(rating)"></div>
+   <div class="firm-social-wrapper">
+  <div class="firm-social-btn"><i class="fa fa-facebook"></i></div>
+  <div class="firm-social-btn"><i class="fa fa-twitter"></i></div>
+  <div class="firm-social-btn"><i class="fa fa-linkedin"></i></div>
+  </div>
+</div>
+  <div class="firm-stat1 col-lg-7 col-md-7 col-sm-7">
+  <div class="firm-rate1 col-lg-6 col-md-6 col-sm-6">
+    <div classs="firm-commission">
+      <span>Commission Rate</span>
+    </div>
+    </div>
+    <div class="firm-rate2 col-lg-6 col-md-6 col-sm-6">
+    <div classs="other-charges">
+      <span>Minimum Balance</span>
+    </div>
+  </div>
+   </div>
+  <div class="firm-info col-lg-2 col-md-2 col-sm-2">
+    <button type="button" class="btn btn-success get-start">Get Started</button>
+    <button type="button" class="btn btn-primary get-start">Request call</button>
+    <button type="button" class="btn btn-info get-start">Ask Question</button>
+  </div>
+  <div>
+  </div>
+</div> -->
+</section>
+</div>
+
+</div>

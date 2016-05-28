@@ -1,0 +1,300 @@
+.intro-image-broker{
+    min-height: 50vh;
+    /*background-image: url(../images/bg-repeat.svg),linear-gradient(rgba(33, 103, 136, 0.85),rgba(38, 117, 154, 0.65)),url(../images/3.jpg);
+    background:url(../images/bg-repeat.svg),linear-gradient(140deg,rgb(10, 36, 62),rgba(27,30,39,.65)),url(../images/3.jpg) repeat;*/
+    background:url(../images/bg-repeat.svg),linear-gradient(140deg,rgb(10, 36, 62),rgba(27,30,39,.65)),url(../images/4.jpg) repeat;
+    background-position: center;
+    background-size: 3px,cover,cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.banner-broker h1{
+      margin: 0 0 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.banner-broker p{
+      color: #d7eff3;
+    margin: 0 auto 15px;
+    max-width: 550px;
+    width: 85%;
+    font-size: 12px;
+}
+
+.banner-broker form{
+  left: 25%;
+}
+.banner-broker{
+
+      left: 50%;
+    line-height: 1.1667;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+        top: 42%;
+        text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+/*
+.broker-wrapper{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: white;  
+    background-image: url(../images/bg-repeat.svg); 
+    background-position: center;
+    background-size: 4px,cover,cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.broker-container{
+    background-color: #182e4a;
+    background:url(../images/bg-repeat.svg),linear-gradient(140deg,rgb(10, 36, 62),rgba(27,30,39,.65)),url(../images/4.jpg) repeat;
+    background-position: center;
+    background-size: 3px,cover,cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 66vh;
+    position: relative;
+    height: 100%;
+    padding: 10vh 2vh 1vh;
+    text-align: center;
+  }*/
+
+    
+
+/*.broker-container .form-wrapper {
+    
+   margin: auto;
+    margin-top: 25px;
+}
+
+.broker-container h1 {
+    margin: 20 0 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    color: white;
+    letter-spacing: 1.5px;
+    font-family: bitter;
+    line-height: 6vh;
+    font-size: 3vw;
+}
+
+.broker-container p {
+    color: white;
+    margin: 0 auto 20px;
+    max-width: 38vw;
+    width: 85%;
+    font-size: 1.2vw;
+}
+*/
+.find-broker ul{
+  display: flex;
+  margin-top: 50px;
+  padding: 0px;
+
+}
+.find-broker ul li{
+margin: auto;
+  }
+
+.find-broker .icon{
+  font-size: 50px;
+  color: #348D54;
+  text-align: center;
+}
+/* .service-title {
+ color: #0C4B82;
+    font-size: 1.1vw;
+    font-weight: bold;
+    font-family: arvo;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 2px;
+
+  }*/
+.broker-option .service-title{
+ color:  #077709;
+ float: left;
+}
+
+ .broker-option:hover .fa-3dicon{
+    animation: rotate 3s linear infinite both;
+    color:#3c763d;
+}
+
+.broker-result{
+
+	height: 100%;
+	position: relative;
+}
+.brokers {
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile {
+  position: relative;  
+  border-radius: 8px;
+  text-transform: uppercase;
+ margin: 20px;
+max-width: 100%;
+display: inline-block;
+
+}
+.profile::after {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  z-index: -1;
+  width: 94%;
+  height: 1px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  content: '';
+}
+
+.profile-header {
+  height: 100px;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  background: #e8decd;
+}
+
+.profile-content {
+  padding: 0 30px 5px;
+  border-radius: 0 0 5px 5px;
+  color: #e7e0cf;
+  text-align: center;
+  background: #2f363e;
+}
+.profile-content img {
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #e7e0cf;
+  border-radius: 100%;
+  background: #e7e0cf;
+}
+.profile-content a h1 {
+  margin: 15px 0 0;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: white;
+}
+.profile-content p {
+  margin: 5px 0 0;
+  color: #b49e6b;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.profile-butn {
+  margin-top: 25px;
+  padding: 10px 20px;
+  min-width: 160px;
+  background: #c54b30;
+  border: 1px solid #171c22;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 0 #d16e59;
+  color: #e7e0cf;
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition: background ease-out 0.15s;
+  transition: background ease-out 0.15s;
+}
+.profile-butn:hover, .profile-butn:focus {
+  background: #ac422a;
+}
+.profile-butn:focus {
+  outline: none;
+  box-shadow: inset 0 1px 0 0 #d16e59, 0 0 0 3px #e7e0cf;
+}
+.profile-butn:active {
+  background: #943824;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.profileCard_social {
+
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    display: table;
+    
+    padding: 10px 0;
+}
+.profileCard_socialItem {
+  display: table-cell;
+  text-align: center;
+}
+.profileCard_socialLink {
+  color: white;
+}
+
+.Statistics{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #171a1f;
+  border-radius: 0 0 7px 7px;
+  list-style: none;
+  background: #2f363e;
+}
+.Statistics li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #3e424d;
+  padding: 15px 10px;
+  color: #c54b30;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.Statistics li + li {
+  border-left: 1px solid #171a1f;
+  box-shadow: -1px 0 0 #3e424d;
+}
+.Statistics span {
+  display: inline-block;
+  margin-left: 0.4em;
+  color: #a9a9a9;
+  font-weight: 300;
+  font-size: 0.8em;
+}

@@ -1,0 +1,513 @@
+{
+	"saving_schemes" : [
+  {
+"scheme_number":"1",
+"scheme_name":"Post Office Saving Deposit",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"4",
+	"rate_label":"% per annum"
+}
+	],
+
+"maturity_period":"NA",
+"min_investment":"Rs.20",
+"max_investment":"No Limit",
+"min_balance":"Rs.50 as minimum balance for non cheque facility account.",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"NA",
+"deposit_tax_free":"No",
+"interest_tax_free":"Yes",
+"transfer_account":"one post office to another post office only",
+"eligibility":[
+{
+	"elig":"Account can be opened by cash only."
+}
+],
+"others":
+[
+{
+	"note":"One account can be opened in one post office."
+},
+{
+	"note":"Minor after attaining majority has to apply for conversion of the account in his name."
+},
+{
+	"note":"Interest earned is Tax Free up to INR 10000 per year."
+},
+{
+	"note":" At least one transaction of deposit or withdrawal in three financial years is necessary to keep the account active"
+},
+{
+	"note":"ATM/Debit Cards can be issued to Savings Account holders"
+}
+]
+},
+   {
+"scheme_number":"2",
+"scheme_name":"Time Deposit Account",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"7.1",
+	"rate_label":"% per annum for 1 year "
+},
+{
+	"rate":"7.2",
+	"rate_label":"% per annum for 2 years "
+},
+{
+	"rate":"7.4",
+	"rate_label":"% per annum for 3 years "
+},
+{	
+	"rate":"7.9",
+	"rate_label":"% per annum for 5 years "
+}
+	],
+"maturity_period":"Multiple time duration plans available",
+"min_investment":"200",
+"max_investment":"No Limit",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"NA",
+"deposit_tax_free":"Yes",
+"interest_tax_free":"No",
+"transfer_account":"one post office to another post office only",
+"eligibility":[
+{
+	"elig":"Account can be opened by cash/cheque."
+}
+],
+"others":
+[
+{
+	"note":"Any number of accounts can be opened in any post office."
+},
+{
+	"note":"Minor after attaining majority has to apply for conversion of the account in his name."
+},
+{
+	"note":"when any TD account is matured, the same TD account will be automatically renewed for the period for which the account was initially opened."
+},
+{
+	"note":"Investment under 5 Years TD qualifies for the benefit of Section 80C."
+}
+]
+},
+   {
+"scheme_number":"3",
+"scheme_name":"5-Year Post Office Recurring Deposit Account",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"7.4",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"5 Years",
+"min_investment":"10 per month",
+"max_investment":"No Limit",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"NA",
+"deposit_tax_free":"No",
+"interest_tax_free":"No",
+"transfer_account":"one post office to another post office only",
+"eligibility":[
+{
+	"elig":"Account can be opened by cash only."
+},
+{
+	"elig":"Account may be opened by individual."
+}
+],
+"others":
+[
+
+{
+	"note":"Any number of accounts can be opened in any post office."
+},
+{
+	"note":"Minor after attaining majority has to apply for conversion of the account in his name."
+},
+{
+	"note":"Subsequent deposit can be made up to 15th day of next month,if account opened before 15th of calendar month"
+},
+{
+	"note":"Subsequent deposit can be made up to last day of next month,if account opened after 15th of calendar month"
+},
+{
+	"note":"Default fee is charged for each default, default fee @ 5 paisa for every 5 rupee shall be charged."
+},
+{
+	"note":"One withdrawal upto 50% of the balance allowed after one year."
+}
+
+]
+},
+   {
+"scheme_number":"4",
+"scheme_name":"Post Office Monthly Income Account Scheme",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"7.8",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"5 years",
+"min_investment":"1500",
+"max_investment":"450000 - Single account, 900000 - Joint account",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"Yes",
+"deposit_tax_free":"No",
+"interest_tax_free":"No",
+"transfer_account":"one post office to another post office only",
+"eligibility":[
+{
+	"elig":"Account can be opened by cash only."
+},
+{
+	"elig":"Account may be opened by individual."
+}
+],
+"others":
+[
+{
+	"note":"Any number of accounts can be opened in any post office."
+},
+{
+	"note":"Minor after attaining majority has to apply for conversion of the account in his name."
+},
+{
+	"note":"Premature closure is allowed after one year."
+},
+{
+	"note":"Two per cent of the deposit is charged as penalty for premature closure between the first and third year of opening the account. Beyond the third year, a penalty of one per cent is levied."
+}
+
+]
+},
+   {
+"scheme_number":"5",
+"scheme_name":"Senior Citizen Savings Scheme",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"8.6",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"5 years",
+"min_investment":"Rs. 1000 and in multiples thereof",
+"max_investment":"Rs. 15 Lakh",
+"min_balance":"NA",
+"account_minor":"No",
+"online":"Yes",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"Yes",
+"deposit_tax_free":"Yes",
+"interest_tax_free":"No",
+"transfer_account":"one post office to another post office only",
+"eligibility":[
+{
+	"elig":"Account may be opened by individual of the age of 60 years or more ."
+},
+{
+	"elig":"Retired personnel of Defence Services (excluding Civilian Defence Employees) shall be eligible to subscribe under the scheme irrespective of the above age limits."
+}
+],
+"others":
+[
+{
+	"note":"Any number of accounts can be opened in any post office."
+},
+{
+	"note":"Premature closure is allowed after one year."
+},
+{
+	"note":"Deduction of an amount equal to 1.5% of the deposit & after 2 years 1% of the deposit"
+},
+{
+	"note":"TDS is deducted at source on interest if the interest amount is more than INR 10,000/- p.a."
+}
+]
+},
+   {
+"scheme_number":"6",
+"scheme_name":"Public Provident Fund Account (PPF)",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"8.1",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"15 years",
+"min_investment":"500",
+"max_investment":"150000 per year",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"Yes",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"No",
+"deposit_tax_free":"Yes",
+"interest_tax_free":"Yes",
+"transfer_account":"one post office to another post office or any other bank",
+"eligibility":[
+{
+	"elig":"Account may be opened by individual."
+}
+],
+"others":
+[
+{
+	"note":"Any number of accounts can be opened in any post office."
+},
+{
+	"note":"Deposits can be done maximum in 12 transactions."
+},
+{
+	"note":"Loan can be availed between 3rd to 6th financial year."
+},
+{
+	"note":"Partial withdrawal facility can be availed from 7th financial year onwards."
+}
+]
+},
+   {
+"scheme_number":"7",
+"scheme_name":"National Savings Certificates (NSC)",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"8.1",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"5 years",
+"min_investment":"100",
+"max_investment":"No Limit,available in denominations of INR. 100, 500, 1000, 5000 & 10000",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"No",
+"deposit_tax_free":"Yes",
+"interest_tax_free":"No",
+"transfer_account":"transfer of certificates from one person to another can be done only once from date of issue to date of maturity.",
+"eligibility":[
+{
+	"elig":"Account may be opened by individual."
+}
+],
+"others":
+[
+
+]
+},
+   {
+"scheme_number":"8",
+"scheme_name":"Kisan Vikas Patra (KVP)",
+"logo":"",
+"interest_rate":
+[
+	{
+		"rate":"7.8",
+		"rate_label":"% per annum"
+	}
+],
+"maturity_period":"110 months",
+"min_investment":"1000",
+"max_investment":"No Limit,available in the denominations of Rs 1000, Rs 5000, Rs 10000, Rs 50000",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"No",
+"premature_closure":"Yes",
+"deposit_tax_free":"No",
+"interest_tax_free":"No",
+"transfer_account":"one person to another person and one post office to another post office only",
+"eligibility":[
+{
+	
+}
+],
+"others":
+[
+{
+	"note":"Certificate can be encashed after 2 & 1/2 years from the date of issue."
+}
+]
+},
+   {
+"scheme_number":"9",
+"scheme_name":"Sukanya Samriddhi Accounts",
+"logo":"",
+"interest_rate":
+[
+{
+	"rate":"8.6",
+	"rate_label":"% per annum"
+}
+	],
+"maturity_period":"21 years or girl child marriage",
+"min_investment":"1000 per year",
+"max_investment":"150000 in one financial year",
+"min_balance":"NA",
+"account_minor":"Yes",
+"online":"No",
+"nomination":"Yes",
+"joint":"Yes",
+"premature_closure":"Yes",
+"deposit_tax_free":"Yes",
+"interest_tax_free":"Yes",
+"transfer_account":"NA",
+"eligibility":[
+{
+	"elig":" A legal Guardian/Natural Guardian can open account in the name of Girl Child."
+},
+{
+	"elig":"A guardian can open only one account in the name of one girl child and maximum two accounts in the name of two different Girl children."
+}
+],
+"others":
+[
+{
+	"note":"Deposits in an account can be made till completion of 14 years, from the date of opening of the account."
+},
+{
+	"note":"Partial withdrawal, maximum up to 50% of balance standing at the end of the preceding financial year can be taken after Account holder’s attaining age of 18 years."
+},
+{
+	"note":"Premature closure will be allowed after completion of 18 years /provided that girl is married."
+},
+{
+	"note":"If minimum Rs 1000/- is not deposited in a financial year, account will become discontinued and can be revived with a penalty of Rs 50 per year"
+}
+]
+}
+],
+
+"insurance_schemes" : [
+  {
+  "scheme_number":"1",
+  "intro":"The scheme will be a one year cover, renewable from year to year, Accident Insurance Scheme offering accidental death and disability cover for death or disability on account of an accident.",
+"scheme_name":"Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+"logo":"",
+"entry_age":"18-70 years",
+"cover_ceasing":"70 years",
+"premium":"Rs. 12 annually",
+"sum_assured":"200000",
+"maturity_benefit":"NIL",
+"risk_period":"1st June to 31st May every year",
+"death_benefit":[
+{
+
+	"benefit_label":"Natural Death",
+	"benefit":"NIL"
+},
+{
+	"benefit_label":"Accidental Death",
+	"benefit":"Rs.200000"
+}
+],
+"eligibility":[
+{
+	"elig":"Person who has savings bank account with the Policyholder with sufficient balance."
+}
+],
+"others":
+[
+{
+	"note":"Sum assured in case of total and irrecoverable loss of sight of one eye or loss of use of one hand or one foot is Rs. 100000"
+},
+{
+	"note":"Accident cover will terminate in case of closure of account with the Bank."
+},
+{
+	"note":"Accident cover will terminate in case of insufficiency of balance to keep the insurance in force."
+},
+{
+	"note":"Individuals who exit the scheme at any point may re-join the scheme in future years by paying the annual premium."
+}
+]
+},
+
+{
+  "scheme_number":"2",
+"scheme_name":"Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+"intro":"The scheme will be a one year cover, renewable from year to year, Insurance Scheme offering life insurance cover for death due to any reason.",
+"logo":"",
+"entry_age":"18-55 years",
+"cover_ceasing":"55 years",
+"premium":"Rs. 330 annually",
+"sum_assured":"200000",
+"maturity_benefit":"NIL",
+"risk_period":"1st June to 31st May every year",
+"death_benefit":[
+{
+
+	"benefit_label":"Natural Death",
+	"benefit":"Rs.20000"
+},
+{
+	"benefit_label":"Accidental Death",
+	"benefit":"Rs.200000"
+}
+],
+"eligibility":[
+{
+	"elig":"Person who has savings bank account with the Policyholder with sufficient balance."
+},
+{
+	"elig":"Person who is not already insured under the PradhanMantriJeevanJyotiBimaYojana by any other insurer."
+}
+],
+"others":
+[
+{
+	"note":"Accident cover will terminate in case of closure of account with the Bank."
+},
+{
+	"note":"Accident cover will terminate in case of insufficiency of balance to keep the insurance in force."
+},
+{
+	"note":"Individuals who exit the scheme at any point may re-join the scheme in future years by paying the annual premium."
+}
+]
+}
+  ],
+
+  "pension_schemes" : [
+  {
+  	
+  }
+  ]
+}
